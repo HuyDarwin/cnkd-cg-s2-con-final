@@ -1,0 +1,54 @@
+.puzzleboard_holder {
+	background: url('../Images/puzzleboard_bg.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+}
+
+.puzzleboard {
+	width:85.2vw;
+	height:29.6vw;
+	top:13.5vw;
+	left:7.3vw;
+}
+
+.letter {
+	background-image: url("../Images/green_letter.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color:black;
+	text-align:center;
+	font-family:'Neue Helvetica Condensed 87 Heavy';
+	font-size:5vw;
+	border-width:0.5vw 0.2vw;
+	border-style: solid;
+	border-color: transparent;
+	border-collapse: collapse;
+	width:4.8vw;
+	height:6.4vw;
+}
+
+.letter div {
+	width:4.8vw;
+	height:6.4vw;
+	line-height:0vw;
+}
+
+#letter_1, #letter_16, #letter_49, #letter_64 {
+	background-image: none;
+}
+
+.backdrop {
+	background: url('../Images/backdrop.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+	opacity:0;
+}

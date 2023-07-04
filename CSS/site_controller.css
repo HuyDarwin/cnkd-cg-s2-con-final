@@ -1,0 +1,406 @@
+button {
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-family:'FZ Lufga';
+	font-size:1.5vw;
+	font-weight: bold;
+	border:0.1vw solid white;
+	cursor: pointer;
+}
+
+button:not(:disabled):hover {
+	background-color:white;
+	color:black;
+	transition: 0.25s;
+}
+
+button:disabled {
+	color:gray;
+	border:0.1vw solid gray;
+	cursor:auto;
+}
+
+textarea {
+	resize:none;
+	font-family:'FZ Lufga';
+	font-size:1.5vw;
+	background-color:black;
+	color:white;
+	border-radius:0;
+}
+
+.background {
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+	filter: brightness(0.1);
+}
+
+.preview {
+	width:32vw;
+	height:18vw;
+	top:0.5vw;
+	border:0.1vw solid white;
+}
+
+#pre_wheel {
+	left:0.5vw;
+}
+
+#pre_puzzleboard {
+	left:33vw;
+}
+
+#bh_wheel {
+	width:32.15vw;
+	height:26.5vw;
+	top:19vw;
+	left:0.5vw;
+}
+
+#cw_r2_3 {
+	left:7.5vw;
+}
+
+#cw_r4 {
+	left:16.5vw;
+}
+
+#spin {
+	top:2.3vw;
+	width:32.15vw;
+}
+
+#awt_1m {
+	top:4.6vw;
+}
+
+#awt_ex {
+	top:4.6vw;
+	left:8.1vw;
+}
+
+#awt_jack {
+	top:4.6vw;
+	left:15.4vw;
+}
+
+#awt_may {
+	top:4.6vw;
+	left:22.9vw;
+}
+
+#awt_mys {
+	top:6.9vw;
+}
+
+#awt_gift {
+	top:6.9vw;
+	left:7.1vw;
+}
+
+#awt_rui {
+	top:6.9vw;
+	left:18.4vw;
+}
+
+#awt_switch {
+	top:6.9vw;
+	left:25vw;
+}
+
+#awt_them {
+	top:9.2vw;
+}
+
+#awt_wild {
+	top:9.2vw;
+	left:8.8vw;
+}
+
+#reset_wedges_tags {
+	top:9.2vw;
+	left:14.8vw;
+}
+
+.question_info_text {
+	font-family:'FZ Lufga';
+	font-size:1.75vw;
+	font-weight: bold;
+	color:white;
+	text-align:center;
+}
+
+#qit_category {
+	top:12.5vw;
+	height:2.25vw;
+	line-height:2.25vw;
+}
+
+#qit_hint {
+	top:15vw;
+	height:5vw;
+	line-height:5vw;
+}
+
+.question_info {
+	font-family:'SFU Futura Book';
+	font-size:1.3vw;
+	border:0.1vw solid white;
+	left:9.5vw;
+	width:22.5vw;
+}
+
+#qi_category {
+	top:12.5vw;
+	height:2.25vw;
+}
+
+#qi_hint {
+	top:15vw;
+	height:5vw;
+}
+
+#reload {
+	top:21vw;
+}
+
+#bh_puzzleboard {
+	width:32.15vw;
+	height:26.5vw;
+	top:19vw;
+	left:33vw;
+}
+
+#sr_t2 {
+	left:7.2vw;
+}
+
+#sr_1 {
+	left:14.5vw;
+}
+
+#sr_2 {
+	left:21.2vw;
+}
+
+#sr_3 {
+	top:2.3vw;
+}
+
+#sr_tt1 {
+	top:2.3vw;
+	left:7.1vw;
+}
+
+#sr_tt2 {
+	top:2.3vw;
+	left:19vw;
+}
+
+#sr_tt3 {
+	top:4.6vw;
+}
+
+#sr_4 {
+	top:4.6vw;
+	left:12.1vw;
+}
+
+#sr_a {
+	top:4.6vw;
+	left:19.2vw;
+}
+
+#sr_b {
+	top:6.9vw;
+}
+
+#reset_puzzleboard {
+	top:6.9vw;
+	left:11vw;
+}
+
+#reset_puzzleboard_data {
+	top:6.9vw;
+	left:16.1vw;
+}
+
+.open_letter {
+	width:1.8125vw;
+	height:2.05vw;
+}
+
+#ol_1, #ol_2, #ol_3, #ol_4, #ol_5, #ol_6, #ol_7, #ol_8, #ol_9, #ol_10, #ol_11, #ol_12, #ol_13, #ol_14, #ol_15, #ol_16 { top:9.2vw; }
+#ol_17, #ol_18, #ol_19, #ol_20, #ol_21, #ol_22, #ol_23, #ol_24, #ol_25, #ol_26, #ol_27, #ol_28, #ol_29, #ol_30, #ol_31, #ol_32 { top: 11.5vw; }
+#ol_33, #ol_34, #ol_35, #ol_36, #ol_37, #ol_38, #ol_39, #ol_40, #ol_41, #ol_42, #ol_43, #ol_44, #ol_45, #ol_46, #ol_47, #ol_48 { top: 13.8vw; }
+#ol_49, #ol_50, #ol_51, #ol_52, #ol_53, #ol_54, #ol_55, #ol_56, #ol_57, #ol_58, #ol_59, #ol_60, #ol_61, #ol_62, #ol_63, #ol_64 { top: 16.1vw; }
+#ol_2, #ol_18, #ol_34, #ol_50 { left: 1.9625vw; }
+#ol_3, #ol_19, #ol_35, #ol_51 { left: 3.925vw; }
+#ol_4, #ol_20, #ol_36, #ol_52 { left: 5.8875vw; }
+#ol_5, #ol_21, #ol_37, #ol_53 { left: 7.85vw; }
+#ol_6, #ol_22, #ol_38, #ol_54 { left: 9.8125vw; }
+#ol_7, #ol_23, #ol_39, #ol_55 { left: 11.775vw; }
+#ol_8, #ol_24, #ol_40, #ol_56 { left: 13.7375vw; }
+#ol_9, #ol_25, #ol_41, #ol_57 { left: 15.7vw; }
+#ol_10, #ol_26, #ol_42, #ol_58 { left: 17.6625vw; }
+#ol_11, #ol_27, #ol_43, #ol_59 { left: 19.625vw; }
+#ol_12, #ol_28, #ol_44, #ol_60 { left: 21.5875vw; }
+#ol_13, #ol_29, #ol_45, #ol_61 { left: 23.55vw; }
+#ol_14, #ol_30, #ol_46, #ol_62 { left: 25.5125vw; }
+#ol_15, #ol_31, #ol_47, #ol_63 { left: 27.475vw; }
+#ol_16, #ol_32, #ol_48, #ol_64 { left: 29.4375vw; }
+
+#puzzle_reveal {
+	top:18.4vw;
+}
+
+#puzzle_solve {
+	top:18.4vw;
+	left:11.6vw;
+}
+
+#tossup_buzzer {
+	top:20.7vw;
+}
+
+#tossup_continue {
+	top:20.7vw;
+	left:11.8vw;
+}
+
+#reveal_backdrop {
+	top:23vw;
+}
+
+#hide_backdrop {
+	top:23vw;
+	left:14vw;
+}
+
+#bh_sounds {
+	width:33.6vw;
+	height:23.5vw;
+	top:0.5vw;
+	left:65.65vw;
+}
+
+#bh_sounds button {
+	position:static;
+}
+
+.contestants_score {
+	width:34vw;
+	height:20vw;
+	top:24vw;
+	left:65.5vw;
+}
+
+.cont_text {
+	font-family:'FZ Lufga';
+	font-size:1.75vw;
+	font-weight: bold;
+	color:white;
+	height:2.25vw;
+	line-height:2.25vw;
+	text-align:center;
+}
+
+#ct_name {
+	width:15vw;
+}
+
+#ct_input, #ct_round, #ct_total {
+	width:5.75vw;
+}
+
+#ct_input {
+	left:15.5vw;
+}
+
+#ct_round {
+	left:21.75vw;
+}
+
+#ct_total {
+	left:28vw;
+}
+
+.contestant_name {
+	width:15vw;
+	height:2.5vw;
+	font-family:'SFU Futura Book';
+	font-size:1.4vw;
+}
+
+.contestant_score_input, .contestant_score_round, .contestant_score_total {
+	width:5.75vw;
+	height:2.5vw;
+}
+
+.contestant_score_input {
+	left:15.5vw;
+	font-family:'SFU Futura Book';
+	font-size:1.4vw;
+}
+
+.contestant_score_round {
+	left:21.75vw;
+	color:black;
+	background-color:white;
+	font-weight: bold;
+}
+
+.contestant_score_total {
+	left:28vw;
+	color:black;
+	background-color:white;
+	font-weight: bold;
+}
+
+#cn_1, #csi_1, #csr_1, #cst_1 {
+	top:2.5vw;
+}
+
+#cn_2, #csi_2, #csr_2, #cst_2 {
+	top:5.25vw;
+}
+
+#cn_3, #csi_3, #csr_3, #cst_3 {
+	top:8vw;
+}
+
+#update_names {
+	top:10.75vw;
+	width:15vw;
+}
+
+.update_round_score, .update_total_score {
+	width:5.75vw;
+}
+
+.update_round_score {
+	left:21.75vw;
+}
+
+.update_total_score {
+	left:28vw;
+}
+
+#add_to_round, #add_to_total {
+	top:10.75vw;
+}
+
+#subtract_from_round, #subtract_from_total {
+	top:13.05vw;
+}
+
+#replace_round, #replace_total {
+	top:15.35vw;
+}
+
+#reset_round, #reset_total {
+	top:17.65vw;
+}

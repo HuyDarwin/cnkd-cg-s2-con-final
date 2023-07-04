@@ -1,0 +1,61 @@
+button {
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-family:'FZ Lufga';
+	font-size:5vw;
+	font-weight: bold;
+	border:0.1vw solid white;
+	cursor: pointer;
+}
+
+button:not(:disabled):hover {
+	background-color:white;
+	color:black;
+	transition: 0.25s;
+}
+
+button:disabled {
+	color:gray;
+	border:0.1vw solid gray;
+	cursor:auto;
+}
+
+textarea {
+	resize:none;
+	font-family:'FZ Lufga';
+	font-size:2.5vw;
+	background-color:black;
+	color:white;
+	border-radius:0;
+}
+
+.background {
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+	filter: brightness(0.1);
+}
+
+.who_buzzers {
+	width:72vw;
+	height:3.75vw;
+	left:0.5vw;
+	top:0.5vw;
+	border:0.1vw solid white;
+}
+
+.preview {
+	width:72vw;
+	height:40.5vw;
+	top:4.75vw;
+	left:0.5vw;
+}
+
+.buzzer {
+	left:73vw;
+	top:0.5vw;
+	width:26.5vw;
+	height:44.9vw;
+}

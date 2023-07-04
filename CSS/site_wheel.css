@@ -1,0 +1,99 @@
+.wheel_holder {
+	background: url('../Images/wheel_bg.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+}
+
+.wheel {
+	background-image: url("../Images/wheel_r1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:45vw;
+	height:45vw;
+	left:27.75vw;
+	top:10.5vw;
+}
+
+.wheel_wedges_tags {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:45vw;
+	height:45vw;
+	opacity:0;
+}
+
+#wwt_1m {
+	background-image: url("../Images/1 triệu cg.png");
+}
+
+#wwt_ex {
+	background-image: url("../Images/siêu tốc.png");
+}
+
+#wwt_jack {
+	background-image: url("../Images/độc đắc.png");
+}
+
+#wwt_may {
+	background-image: url("../Images/thẻ may mắn.png");
+}
+
+#wwt_mys_1, #wwt_mys_2 {
+	background-image: url("../Images/bí mật.png");
+}
+
+#wwt_gift {
+	background-image: url("../Images/thẻ phần thưởng.png");
+}
+
+#wwt_rui {
+	background-image: url("../Images/thẻ may rủi.png");
+}
+
+#wwt_switch {
+	background-image: url("../Images/đổi điểm.png");
+}
+
+#wwt_them {
+	background-image: url("../Images/thẻ thêm lượt.png");
+}
+
+#wwt_wild {
+	background-image: url("../Images/thẻ cơ hội.png");
+}
+
+#kim_1 {
+	background: url('../Images/kim_1.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:3.65vw;
+	height:3.9vw;
+	left:36vw;
+	top:14vw;
+}
+
+#kim_2 {
+	background: url('../Images/kim_2.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:2.65vw;
+	height:4.6vw;
+	left:48.675vw;
+	top:9.8vw;
+}
+
+#kim_3 {
+	background: url('../Images/kim_3.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:3.65vw;
+	height:3.9vw;
+	left:60.7vw;
+	top:13.5vw;
+}

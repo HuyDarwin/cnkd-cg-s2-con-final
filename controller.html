@@ -1,0 +1,210 @@
+<html>
+<head>
+    <title>Controller</title>
+	
+	<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<script type="module" src="JS/firebase.js"></script>
+	<script type='module' src='JS/functions.js'></script>	
+	<script type="module" src="JS/controller_fb.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site_controller.css">
+	
+    <meta charset="utf-8" />
+</head>
+<body>
+	<img class='background' src='Images/controller_bg.png' />
+	
+	<iframe class='preview' id='pre_wheel' src='wheel.html' frameborder='0'></iframe>
+	<iframe class='preview' id='pre_puzzleboard' src='puzzleboard.html' frameborder='0'></iframe>
+	
+	<div class='button_holder' id='bh_wheel'>
+		<button name='autocmd' class='change_wheel' id='cw_r1'>WHEEL R1</button>
+		<button name='autocmd' class='change_wheel' id='cw_r2_3'>WHEEL R2-3</button>
+		<button name='autocmd' class='change_wheel' id='cw_r4'>WHEEL R4</button>
+		
+		<button name='autocmd' id='spin'>SPIN THE WHEEL</button>
+		
+		<button name='autocmd' class='add_wedge_tag' id='awt_1m'>1 TRIỆU CG</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_ex'>SIÊU TỐC</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_jack'>ĐỘC ĐẮC</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_may'>MAY MẮN</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_mys'>Ô BÍ MẬT</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_gift'>PHẦN THƯỞNG</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_rui'>MAY RỦI</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_switch'>ĐỔI ĐIỂM</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_them'>THÊM LƯỢT</button>
+		<button name='autocmd' class='add_wedge_tag' id='awt_wild'>CƠ HỘI</button>
+		<button name='autocmd' id='reset_wedges_tags'>RESET WEDGES & TAGS</button>
+		
+		<p class='question_info_text' id='qit_category'>CATEGORY</p>
+		<textarea class='question_info' id='qi_category'></textarea>
+		<p class='question_info_text' id='qit_hint'>HINT</p>
+		<textarea class='question_info' id='qi_hint'></textarea>
+		
+		<button name='autocmd' id='reload'>RELOAD</button>
+	</div>
+	
+	<div class='button_holder' id='bh_puzzleboard'>
+		<input type='file' id='get_questions_file' style="display:none" accept=".xls,.xlsx,.ods"></input>
+		
+		<button class='select_round' id='sr_t1'>TOSSUP 1</button>
+		<button class='select_round' id='sr_t2'>TOSSUP 2</button>
+		<button class='select_round' id='sr_1'>ROUND 1</button>
+		<button class='select_round' id='sr_2'>ROUND 2</button>
+		<button class='select_round' id='sr_3'>ROUND 3</button>
+		<button class='select_round' id='sr_tt1'>TRIPLE TOSSUP 1</button>
+		<button class='select_round' id='sr_tt2'>TRIPLE TOSSUP 2</button>
+		<button class='select_round' id='sr_tt3'>TRIPLE TOSSUP 3</button>
+		<button class='select_round' id='sr_4'>ROUND 4</button>
+		<button class='select_round' id='sr_a'>AUDIENCE ROUND</button>
+		<button class='select_round' id='sr_b'>BONUS ROUND</button>
+		
+		<button name='autocmd' id='reset_puzzleboard'>RESET</button>
+		<button name='autocmd' id='reset_puzzleboard_data'>RESET DATA</button>
+		
+		<button name='autocmd' class='open_letter' id='ol_1'></button>
+		<button name='autocmd' class='open_letter' id='ol_2'></button>
+		<button name='autocmd' class='open_letter' id='ol_3'></button>
+		<button name='autocmd' class='open_letter' id='ol_4'></button>
+		<button name='autocmd' class='open_letter' id='ol_5'></button>
+		<button name='autocmd' class='open_letter' id='ol_6'></button>
+		<button name='autocmd' class='open_letter' id='ol_7'></button>
+		<button name='autocmd' class='open_letter' id='ol_8'></button>
+		<button name='autocmd' class='open_letter' id='ol_9'></button>
+		<button name='autocmd' class='open_letter' id='ol_10'></button>
+		<button name='autocmd' class='open_letter' id='ol_11'></button>
+		<button name='autocmd' class='open_letter' id='ol_12'></button>
+		<button name='autocmd' class='open_letter' id='ol_13'></button>
+		<button name='autocmd' class='open_letter' id='ol_14'></button>
+		<button name='autocmd' class='open_letter' id='ol_15'></button>
+		<button name='autocmd' class='open_letter' id='ol_16'></button>
+		<button name='autocmd' class='open_letter' id='ol_17'></button>
+		<button name='autocmd' class='open_letter' id='ol_18'></button>
+		<button name='autocmd' class='open_letter' id='ol_19'></button>
+		<button name='autocmd' class='open_letter' id='ol_20'></button>
+		<button name='autocmd' class='open_letter' id='ol_21'></button>
+		<button name='autocmd' class='open_letter' id='ol_22'></button>
+		<button name='autocmd' class='open_letter' id='ol_23'></button>
+		<button name='autocmd' class='open_letter' id='ol_24'></button>
+		<button name='autocmd' class='open_letter' id='ol_25'></button>
+		<button name='autocmd' class='open_letter' id='ol_26'></button>
+		<button name='autocmd' class='open_letter' id='ol_27'></button>
+		<button name='autocmd' class='open_letter' id='ol_28'></button>
+		<button name='autocmd' class='open_letter' id='ol_29'></button>
+		<button name='autocmd' class='open_letter' id='ol_30'></button>
+		<button name='autocmd' class='open_letter' id='ol_31'></button>
+		<button name='autocmd' class='open_letter' id='ol_32'></button>
+		<button name='autocmd' class='open_letter' id='ol_33'></button>
+		<button name='autocmd' class='open_letter' id='ol_34'></button>
+		<button name='autocmd' class='open_letter' id='ol_35'></button>
+		<button name='autocmd' class='open_letter' id='ol_36'></button>
+		<button name='autocmd' class='open_letter' id='ol_37'></button>
+		<button name='autocmd' class='open_letter' id='ol_38'></button>
+		<button name='autocmd' class='open_letter' id='ol_39'></button>
+		<button name='autocmd' class='open_letter' id='ol_40'></button>
+		<button name='autocmd' class='open_letter' id='ol_41'></button>
+		<button name='autocmd' class='open_letter' id='ol_42'></button>
+		<button name='autocmd' class='open_letter' id='ol_43'></button>
+		<button name='autocmd' class='open_letter' id='ol_44'></button>
+		<button name='autocmd' class='open_letter' id='ol_45'></button>
+		<button name='autocmd' class='open_letter' id='ol_46'></button>
+		<button name='autocmd' class='open_letter' id='ol_47'></button>
+		<button name='autocmd' class='open_letter' id='ol_48'></button>
+		<button name='autocmd' class='open_letter' id='ol_49'></button>
+		<button name='autocmd' class='open_letter' id='ol_50'></button>
+		<button name='autocmd' class='open_letter' id='ol_51'></button>
+		<button name='autocmd' class='open_letter' id='ol_52'></button>
+		<button name='autocmd' class='open_letter' id='ol_53'></button>
+		<button name='autocmd' class='open_letter' id='ol_54'></button>
+		<button name='autocmd' class='open_letter' id='ol_55'></button>
+		<button name='autocmd' class='open_letter' id='ol_56'></button>
+		<button name='autocmd' class='open_letter' id='ol_57'></button>
+		<button name='autocmd' class='open_letter' id='ol_58'></button>
+		<button name='autocmd' class='open_letter' id='ol_59'></button>
+		<button name='autocmd' class='open_letter' id='ol_60'></button>
+		<button name='autocmd' class='open_letter' id='ol_61'></button>
+		<button name='autocmd' class='open_letter' id='ol_62'></button>
+		<button name='autocmd' class='open_letter' id='ol_63'></button>
+		<button name='autocmd' class='open_letter' id='ol_64'></button>
+		
+		<button name='autocmd' id='puzzle_reveal'>PUZZLE REVEAL</button>
+		<button name='autocmd' id='puzzle_solve'>PUZZLE SOLVE</button>
+		<button name='autocmd' id='tossup_buzzer'>TOSSUP BUZZER</button>
+		<button name='autocmd' id='tossup_continue'>TOSSUP CONTINUE</button>
+		
+		<button name='autocmd' id='reveal_backdrop'>REVEAL BACKDROP</button>
+		<button name='autocmd' id='hide_backdrop'>HIDE BACKDROP</button>
+	</div>
+	
+	<div class='button_holder' id='bh_sounds'>
+		<button name='autocmd' id='sound_intro'>INTRO</button>
+		<button name='autocmd' id='sound_he'>HOST ENTRANCE</button>
+		<button name='autocmd' id='sound_bg_1'>1</button>
+		<button name='autocmd' id='sound_bg_2'>2</button>
+		<button name='autocmd' id='sound_bg_3'>3</button>
+		<button name='autocmd' id='sound_bg_4'>4</button>
+		<button name='autocmd' id='sound_bg_5'>5</button>
+		<button name='autocmd' id='sound_bg_6'>6</button>
+		<button name='autocmd' id='sound_bg_7'>7</button>
+		<button name='autocmd' id='sound_bg_8'>8</button>
+		<button name='autocmd' id='sound_bg_9'>9</button>
+		<button name='autocmd' id='sound_bg_10'>10</button>
+		<button name='autocmd' id='sound_bg_11'>11</button>
+		<button name='autocmd' id='sound_bg_12'>12</button>
+		<button name='autocmd' id='sound_bg_13'>13</button>
+		<button name='autocmd' id='sound_1m'>1 TRIỆU CG</button>
+		<button name='autocmd' id='sound_br'>BANKRUPT</button>
+		<button name='autocmd' id='sound_ch'>CƠ HỘI</button>
+		<button name='autocmd' id='sound_jack'>ĐỘC ĐẤC</button>
+		<button name='autocmd' id='sound_dd'>ĐỔI ĐIỂM</button>
+	</div>
+	
+	<div class='contestants_score'>
+		<p class='cont_text' id='ct_name'>NAME</p>
+		<p class='cont_text' id='ct_input'>INPUT</p>
+		<p class='cont_text' id='ct_round'>ROUND</p>
+		<p class='cont_text' id='ct_total'>TOTAL</p>
+		
+		<textarea class='contestant_name' id='cn_1' placeholder='Cont. 1 Name'></textarea>
+		<textarea class='contestant_score_input' id='csi_1' placeholder='Score'>0</textarea>
+		<textarea class='contestant_score_round' id='csr_1'>0</textarea>
+		<textarea class='contestant_score_total' id='cst_1'>0</textarea>
+		
+		<textarea class='contestant_name' id='cn_2' placeholder='Cont. 2 Name'></textarea>
+		<textarea class='contestant_score_input' id='csi_2' placeholder='Score'>0</textarea>
+		<textarea class='contestant_score_round' id='csr_2'>0</textarea>
+		<textarea class='contestant_score_total' id='cst_2'>0</textarea>
+		
+		<textarea class='contestant_name' id='cn_3' placeholder='Cont. 3 Name'></textarea>
+		<textarea class='contestant_score_input' id='csi_3' placeholder='Score'>0</textarea>
+		<textarea class='contestant_score_round' id='csr_3'>0</textarea>
+		<textarea class='contestant_score_total' id='cst_3'>0</textarea>
+		
+		<button id='update_names'>UPDATE NAMES</button>
+		
+		<button class='update_round_score' id='add_to_round'>+ I</button>
+		<button class='update_round_score' id='subtract_from_round'>- I</button>
+		<button class='update_round_score' id='replace_round'>SET I</button>
+		<button class='update_round_score' id='reset_round'>0</button>
+		
+		<button class='update_total_score' id='add_to_total'>+ R</button>
+		<button class='update_total_score' id='subtract_from_total'>- R</button>
+		<button class='update_total_score' id='replace_total'>SET R</button>
+		<button class='update_total_score' id='reset_total'>0</button>
+	</div>
+	<script>
+		var round = '';
+		
+		var category = '';
+		var hint = '';
+		
+		var letters = [];
+		
+		var tossup_boolean = false;
+		
+		var tossup_int = '';
+	</script>
+</body>
