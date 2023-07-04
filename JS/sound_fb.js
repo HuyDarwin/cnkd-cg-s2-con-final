@@ -42,6 +42,22 @@ $(function () {
 				con.PlaySound('',2);
 				update(ref(db, 'commands'), { sound_dd : 0 });
 			}
+      
+      onValue(ref(db, 'variables'), (snapshot) => {
+        update(ref(db, 'commands'), {
+          
+        })
+      })
+      
+			if (data.puzzle_reveal == 1){
+				con.PlaySound('',1);
+				update(ref(db, 'commands'), { puzzle_reveal : 0 });
+			}
+			if (data.open_letter == 1){
+        if()
+				con.PlaySound('',4);
+				update(ref(db, 'commands'), { open_letter : 0 });
+			}
 		})
 		
 	}(window.CNKDCGV = window.CNKDCGV || {}));

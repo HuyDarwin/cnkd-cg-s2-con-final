@@ -85,48 +85,68 @@ $(function () {
 			}
 		};
 		
-		con.StopAllSounds = function(a) {
+		con.StopAllSounds = function(a,b) {
 			try {
 				if(a == 1 && at != ''){
 					at.pause();
-					at.currentTime = 0;
+          if(b == 1){
+            at.currentTime = 0;
+          }
 				}
 				if(a == 2 && at2 != ''){
 					at2.pause();
-					at2.currentTime = 0;
+          if(b == 1){
+            at2.currentTime = 0;
+          }
 				}
 				if(a == 3 && at3 != ''){
 					at3.pause();
-					at3.currentTime = 0;
+          if(b == 1){
+            at3.currentTime = 0;
+          }
 				}
 				if(a == 4 && at4 != ''){
 					at4.pause();
-					at4.currentTime = 0;
+          if(b == 1){
+            at4.currentTime = 0;
+          }
 				}
 				if(a == 5 && at5 != ''){
 					at5.pause();
-					at5.currentTime = 0;
+          if(b == 1){
+            at5.currentTime = 0;
+          }
 				}
 				if(a != 1 && a != 2 && a != 3 && a != 4 && a != 5){
 					if(at != ''){
 						at.pause();
-						at.currentTime = 0;
+            if(b == 1){
+              at.currentTime = 0;
+            }
 					}
 					if(at2 != ''){
 						at2.pause();
-						at2.currentTime = 0;
+	            if(b == 1){
+              at2.currentTime = 0;
+            }
 					}
 					if(at3 != ''){
 						at3.pause();
-						at3.currentTime = 0;
+            if(b == 1){
+              at3.currentTime = 0;
+            }
 					}
 					if(at4 != ''){
 						at4.pause();
-						at4.currentTime = 0;
+            if(b == 1){
+              at4.currentTime = 0;
+            }
 					}
 					if(at5 != ''){
 						at5.pause();
-						at5.currentTime = 0;
+            if(b == 1){
+              at5.currentTime = 0;
+            }
 					}
 				}
 			}
