@@ -45,17 +45,28 @@ $(function () {
       
       onValue(ref(db, 'variables'), (snapshot) => {
         update(ref(db, 'commands'), {
-          
+          h: snapshot.val().round
         })
       })
-      
+            
+			if (data.spin == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
+				update(ref(db, 'commands'), { spin : 0 });
+			}
 			if (data.puzzle_reveal == 1){
-				con.PlaySound('',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Puzzle%20Reveal.wav?v=1688483404659',1);
 				update(ref(db, 'commands'), { puzzle_reveal : 0 });
 			}
 			if (data.open_letter == 1){
-        if()
-				con.PlaySound('',4);
+        if(data.h == 'tossup_1' || data.h == 'tossup_2' || data.h == 'triple_tossup_1'){
+          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%231.mp3?v=1688483426714',4);
+        }
+        if(data.h == 'triple_tossup_2'){
+          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%232.mp3?v=1688483428181',4);
+        }
+        if(data.h == 'triple_tossup_3'){
+          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%233.mp3?v=1688483429345',4);
+        }
 				update(ref(db, 'commands'), { open_letter : 0 });
 			}
 		})
