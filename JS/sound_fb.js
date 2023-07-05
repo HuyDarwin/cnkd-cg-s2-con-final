@@ -1,4 +1,4 @@
-import { getDatabase, ref, set, update, onValue, remove } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+import { getDatabase, ref, set, update, onValue, remove, get, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 
 $(function () {
 	"use strict";
@@ -52,28 +52,30 @@ $(function () {
 				update(ref(db, 'commands'), { puzzle_reveal : 0 });
 			}
 			if (data.open_letter == 1){
-				get(child(ref(db), 'variables')).then((snapshot) => {
-				  if (snapshot.exists()) {
-            update(ref(db, 'commands'), {
-              h : snapshot.val().round
-            })
-				  }
-				  else {
-					  console.log("No data available");
-				  }
-				}).catch((error) => {
-				  console.error(error);
-				});
-        if(data.h == 'tossup_1' || data.h == 'tossup_2' || data.h == 'triple_tossup_1'){
+        var h;
+        onValue(ref(db, 'variables'), (snapshot) => {
+          h = snapshot.val().round
+        })
+        console.log(h)
+        
+        if(h == 'tossup_1' || h == 'tossup_2' || h == 'triple_tossup_1'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%231.mp3?v=1688483426714',1);
         }
-        if(data.h == 'triple_tossup_2'){
+        if(h == 'triple_tossup_2'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%232.mp3?v=1688483428181',4);
         }
-        if(data.h == 'triple_tossup_3'){
+        if(h == 'triple_tossup_3'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%233.mp3?v=1688483429345',4);
         }
 				update(ref(db, 'commands'), { open_letter : 0 });
+			}
+			if (data.tossup_buzzer == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20_Ding_.wav?v=1688483446936',2);
+				update(ref(db, 'commands'), { tossup_buzzer : 0 });
+			}
+			if (data.tossup_buzzer == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20_Ding_.wav?v=1688483446936',2);
+				update(ref(db, 'commands'), { tossup_buzzer : 0 });
 			}
 		})
 		

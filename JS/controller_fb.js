@@ -81,6 +81,9 @@ $(function () {
 		$('button[name="autocmd"]').click(function(){
 			update(ref(db, 'commands'), { [this.id] : 1 })
 		})
+		$('button[name="autocmd_class"]').click(function(){
+			update(ref(db, 'commands'), { [this.className] : 1 })
+		})
 		
 		$('.change_wheel').click(function(){
 			$('.change_wheel').removeAttr('disabled');
