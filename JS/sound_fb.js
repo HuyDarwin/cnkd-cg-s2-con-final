@@ -66,9 +66,6 @@ $(function () {
         else if(h == 'triple_tossup_3'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%233.mp3?v=1688483429345',4);
         }
-        else{
-          
-        }
 				update(ref(db, 'commands'), { open_letter : 0 });
 			}
 			if (data.tossup_buzzer == 1){
@@ -76,17 +73,26 @@ $(function () {
 				update(ref(db, 'commands'), { tossup_buzzer : 0 });
 			}
 			if (data.puzzle_solve == 1){
-        con.StopAllSounds();
         if(h == 'tossup_1' || h =='tossup_2' || h =='triple_tossup_3'){
+          con.StopAllSounds();
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Toss%20Up%20Solve.mp3?v=1688483438200',1);
         }
         else if(h == 'triple_tossup_1' || h =='triple_tossup_2'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20Solve.mp3?v=1688483431947',1);
+          setTimeout(function(){
+            con.StopAllSounds();
+          }, 250)
         }
         else{
+          con.StopAllSounds();
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Puzzle%20Solve.mp3?v=1688483410468',1);
         }
 				update(ref(db, 'commands'), { puzzle_solve : 0 });
+			}
+
+			if (data.sound_stop == 1){
+        con.StopAllSounds();
+				update(ref(db, 'commands'), { sound_stop : 0 });
 			}
 		})
 		
