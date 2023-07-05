@@ -645,7 +645,6 @@ $(function () {
 		$('#cw_r1').click();
 		$('#reset_wedges_tags').click();
 		$('#hide_backdrop').click();
-		$('#spin').click();
 		
 		$('.open_letter, #puzzle_reveal, #puzzle_solve, #tossup_buzzer, #tossup_continue, .contestant_score_round, .contestant_score_total, .question_info').attr('disabled', true);
 		

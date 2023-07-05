@@ -43,10 +43,6 @@ $(function () {
 				update(ref(db, 'commands'), { sound_dd : 0 });
 			}
       
-      onValue(ref(db, 'variables'), (snap) => {
-        update(ref(db, 'commands'), { h: snap.val().round })
-      })
-            
 			if (data.spin == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
 				update(ref(db, 'commands'), { spin : 0 });
@@ -56,6 +52,18 @@ $(function () {
 				update(ref(db, 'commands'), { puzzle_reveal : 0 });
 			}
 			if (data.open_letter == 1){
+				get(child(ref(db), 'variables')).then((snapshot) => {
+				  if (snapshot.exists()) {
+            update(ref(db, 'commands'), {
+              h : snapshot.val().round
+            })
+				  }
+				  else {
+					  console.log("No data available");
+				  }
+				}).catch((error) => {
+				  console.error(error);
+				});
         if(data.h == 'tossup_1' || data.h == 'tossup_2' || data.h == 'triple_tossup_1'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%231.mp3?v=1688483426714',1);
         }
