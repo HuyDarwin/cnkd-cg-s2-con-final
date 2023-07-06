@@ -33,19 +33,19 @@ $(function () {
 			}
 			
 			if(data.cw_r1 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/wheel_new_r1.png?v=1688609821984")');
+				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%201.png?v=1688611206409")');
 				update(ref(db, 'commands'), { cw_r1 : 0 })
 			}
 			if(data.cw_r2 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/wheel_new_r2.png?v=1688609828276")');
+				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%202.png?v=1688611230794")');
 				update(ref(db, 'commands'), { cw_r2 : 0 })
 			}
 			if(data.cw_r3 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/wheel_new_r3.png?v=1688609847660")');
+				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%203.png?v=1688611237704")');
 				update(ref(db, 'commands'), { cw_r3 : 0 })
 			}
 			if(data.cw_r4 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/wheel_new_r4.png?v=1688609856338")');
+				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%204.png?v=1688611241089")');
 				update(ref(db, 'commands'), { cw_r4 : 0 })
 			}
 			if(data.spin == 1){
