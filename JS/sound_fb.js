@@ -47,6 +47,10 @@ $(function () {
 				con.PlaySound('',2);
 				update(ref(db, 'commands'), { sound_dd : 0 });
 			}
+			if (data.sound_letter == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20_Ding_.mp3?v=1688522326911',2);
+				update(ref(db, 'commands'), { sound_letter : 0 });
+			}
       
 			if (data.spin == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
@@ -58,7 +62,7 @@ $(function () {
 			}
 			if (data.open_letter == 1){        
         if(h == 'tossup_1' || h == 'tossup_2' || h == 'triple_tossup_1'){
-          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%231.mp3?v=1688483426714',1);
+          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%231.mp3?v=1688483426714',4);
         }
         else if(h == 'triple_tossup_2'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20%232.mp3?v=1688483428181',4);
@@ -74,17 +78,17 @@ $(function () {
 			}
 			if (data.puzzle_solve == 1){
         if(h == 'tossup_1' || h =='tossup_2' || h =='triple_tossup_3'){
-          con.StopAllSounds();
+          con.StopAllSounds(4);
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Toss%20Up%20Solve.mp3?v=1688483438200',1);
         }
         else if(h == 'triple_tossup_1' || h =='triple_tossup_2'){
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Triple%20Toss%20Up%20Solve.mp3?v=1688483431947',1);
           setTimeout(function(){
-            con.StopAllSounds();
+            con.StopAllSounds(4);
           }, 250)
         }
         else{
-          con.StopAllSounds();
+          con.StopAllSounds(4);
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Puzzle%20Solve.mp3?v=1688483410468',1);
         }
 				update(ref(db, 'commands'), { puzzle_solve : 0 });

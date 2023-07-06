@@ -430,14 +430,6 @@ $(function () {
 			}, 250)
 		})
 		
-		$('#reset_puzzleboard').click(function(){
-			for(var i = 1; i <= 64; i++){
-				letters[i - 1].status = 0;
-				update(ref(db, 'variables/letters/status'), { ['letter_' + i] : 0 })
-			}
-			$('.open_letter').html('');
-			$('.open_letter, #puzzle_reveal, #puzzle_solve').attr('disabled', true);
-		})
 		$('#reset_puzzleboard_data').click(function(){
 			update(ref(db, 'variables/letters'), {
 				category : '',
@@ -530,6 +522,7 @@ $(function () {
 					letters[Number(this.id.replace('ol_','')) - 1].status = 2;
 					update(ref(db, 'variables/letters/status'), { ['letter_' + this.id.replace('ol_','')] : 2 })
 					$('#' + this.id).css({'background-color':'#23395D'});
+          update(ref(db, 'commands'), { sound_letter : 1 })
 				}
 				else if(letters[Number(this.id.replace('ol_','')) - 1].status == 2){
 					letters[Number(this.id.replace('ol_','')) - 1].status = 3;
