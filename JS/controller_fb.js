@@ -550,10 +550,11 @@ $(function () {
 		$('.add_wedge_tag').click(function(){
       if($('#' + this.id).css('background-color') == 'rgb(0, 0, 0)'){
         $('#' + this.id).css('background-color', 'rgb(35, 57, 93)');
-        update(ref(db, 'variables'), { buzzer_toggle: 1 })
+        update(ref(db, 'commands'), { [this.id] : 1 })
       }
       else if($('#' + this.id).css('background-color') == 'rgb(35, 57, 93)'){
         $('#' + this.id).css('background-color', 'rgb(0, 0, 0)');
+        update(ref(db, 'commands'), { [this.id] : 0 })
       }
 		})
 		$('#reset_wedges_tags').click(function(){
