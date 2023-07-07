@@ -136,6 +136,10 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Ph%E1%BA%A7n%20Th%C6%B0%E1%BB%9Fng.wav?v=1688742609453',2);
 				update(ref(db, 'commands'), { sound_pt : 0 });
 			}
+			if (data.sound_ex_bg == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Express%20Music.mp3?v=1688744104634',2);
+				update(ref(db, 'commands'), { sound_ex_bg : 0 });
+			}
       
 			if (data.sound_br_trans == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Transition.mp3?v=1688743124414',3);
@@ -158,19 +162,22 @@ $(function () {
 			}
 			if (data.sound_br_10s == 1){
         con.StopAllSounds(3)
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/10%20Seconds.mp3?v=1688743590136',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/10%20Seconds.mp3?v=1688743590136',1);
 				update(ref(db, 'commands'), { sound_br_10s : 0 });
 			}
 			if (data.sound_br_win == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Win.mp3?v=1688743540836',5);
+        con.StopAllSounds(1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Win.mp3?v=1688743540836',4);
 				update(ref(db, 'commands'), { sound_br_win : 0 });
 			}
 			if (data.sound_br_1m_win == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%201%20Million%20Win.mp3?v=1688743561009',5);
+        con.StopAllSounds(1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%201%20Million%20Win.mp3?v=1688743561009',4);
 				update(ref(db, 'commands'), { sound_br_1m_win : 0 });
 			}
 			if (data.sound_br_lose == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Lose.mp3?v=1688743563464',5);
+        con.StopAllSounds(1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Lose.mp3?v=1688743563464',4);
 				update(ref(db, 'commands'), { sound_br_lose : 0 });
 			}
       
@@ -185,9 +192,8 @@ $(function () {
 			}
 			if (data.puzzle_reveal == 1){
         if(h != 'bonus_round'){
-          
+          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Puzzle%20Reveal.wav?v=1688483404659',1);
         }
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Puzzle%20Reveal.wav?v=1688483404659',1);
 				update(ref(db, 'commands'), { puzzle_reveal : 0 });
 			}
 			if (data.open_letter == 1){        
