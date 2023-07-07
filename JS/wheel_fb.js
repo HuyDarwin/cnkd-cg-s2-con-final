@@ -107,7 +107,7 @@ $(function () {
       $('#wwt_ex').css('opacity', data.awt_ex);
       $('#wwt_jack').css('opacity', data.awt_jack);
       $('#wwt_may').css('opacity', data.awt_may);
-      $('#wwt_mys').css('opacity', data.awt_mys);
+      $('#wwt_mys_1, #wwt_mys_2').css('opacity', data.awt_mys);
       $('#wwt_gift').css('opacity', data.awt_gift);
       $('#wwt_rui').css('opacity', data.awt_rui);
       $('#wwt_switch').css('opacity', data.awt_switch);
