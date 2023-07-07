@@ -19,12 +19,16 @@ $(function () {
 			const data = snapshot.val();
 			
 			if (data.sound_intro == 1){
-				con.PlaySound('',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Intro.mp3?v=1688727097999',1);
 				update(ref(db, 'commands'), { sound_intro : 0 });
 			}
 			if (data.sound_he == 1){
-				con.PlaySound('',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Host%20Entrance.mp3?v=1688727171809',2);
 				update(ref(db, 'commands'), { sound_he : 0 });
+			}
+			if (data.sound_bg_1 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_1 : 0 });
 			}
 			
 			if (data.sound_1m == 1){
