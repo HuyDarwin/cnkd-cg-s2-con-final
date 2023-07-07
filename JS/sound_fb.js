@@ -80,25 +80,50 @@ $(function () {
 			}
 			
 			if (data.sound_1m == 1){
-				con.PlaySound('',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/1%20Tri%E1%BB%87u%20CG.wav?v=1688741945417',2);
 				update(ref(db, 'commands'), { sound_1m : 0 });
 			}
 			if (data.sound_br == 1){
-				con.PlaySound('',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bankrupt.wav?v=1688741987558',2);
 				update(ref(db, 'commands'), { sound_br : 0 });
 			}
 			if (data.sound_ch == 1){
-				con.PlaySound('',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/C%C6%A1%20H%E1%BB%99i.wav?v=1688742025638',2);
 				update(ref(db, 'commands'), { sound_ch : 0 });
 			}
 			if (data.sound_jack == 1){
-				con.PlaySound('',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/%C4%90%E1%BB%99c%20%C4%90%E1%BA%AFc.wav?v=1688742086801',2);
 				update(ref(db, 'commands'), { sound_jack : 0 });
 			}
 			if (data.sound_dd == 1){
-				con.PlaySound('',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/%C4%90%E1%BB%95i%20%C4%90i%E1%BB%83m.wav?v=1688742120334',2);
 				update(ref(db, 'commands'), { sound_dd : 0 });
 			}
+			if (data.sound_st == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Express%20SFX.mp3?v=1688742242581',2);
+				update(ref(db, 'commands'), { sound_st : 0 });
+			}
+			if (data.sound_mm == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/May%20M%E1%BA%AFn.wav?v=1688742246533',2);
+				update(ref(db, 'commands'), { sound_mm : 0 });
+			}
+			if (data.sound_mr == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/May%20R%E1%BB%A7i.wav?v=1688742247692',2);
+				update(ref(db, 'commands'), { sound_mr : 0 });
+			}
+			if (data.sound_mys == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Mystery.mp3?v=1688742249817',2);
+				update(ref(db, 'commands'), { sound_mys : 0 });
+			}
+			if (data.sound_tl == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Th%C3%AAm%20L%C6%B0%E1%BB%A3t.wav?v=1688742259238',2);
+				update(ref(db, 'commands'), { sound_tl : 0 });
+			}
+			if (data.sound_ml == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Lose%20A%20Turn%20(_).wav?v=1688742497171',2);
+				update(ref(db, 'commands'), { sound_ml : 0 });
+			}
+      
 			if (data.sound_letter == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20_Ding_.mp3?v=1688522326911',2);
 				update(ref(db, 'commands'), { sound_letter : 0 });
