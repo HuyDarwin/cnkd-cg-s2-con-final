@@ -43,19 +43,19 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_4 : 0 });
 			}
 			if (data.sound_bg_5 == 1){
-				con.PlaySound('',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%205.mp3?v=1688733668734',3);
 				update(ref(db, 'commands'), { sound_bg_5 : 0 });
 			}
 			if (data.sound_bg_6 == 1){
-				con.PlaySound('',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%206.mp3?v=1688733716798',3);
 				update(ref(db, 'commands'), { sound_bg_6 : 0 });
 			}
 			if (data.sound_bg_7 == 1){
-				con.PlaySound('',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%207.mp3?v=1688733738187',3);
 				update(ref(db, 'commands'), { sound_bg_7 : 0 });
 			}
 			if (data.sound_bg_8 == 1){
-				con.PlaySound('',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%208.mp3?v=1688734174866',3);
 				update(ref(db, 'commands'), { sound_bg_8 : 0 });
 			}
 			if (data.sound_bg_9 == 1){
