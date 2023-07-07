@@ -548,20 +548,18 @@ $(function () {
 		})
 		
 		$('.add_wedge_tag').click(function(){
-      
-      alert($('#' + this.id).css('background-color'))
-      if($('#' + this.id).css('background-color') == 'black'){
-        $('#' + this.id).css(('background-color', '#23395D'));
+      if($('#' + this.id).css('background-color') == 'rgb(255, 255, 255)'){
+        $('#' + this.id).css('background-color', 'rgb(35, 57, 93)');
       }
-      else if($('#' + this.id).css('background-color') == '#23395D'){
-        $('#' + this.id).css(('background-color', 'black'));
+      else if($('#' + this.id).css('background-color') == 'rgb(35, 57, 93)'){
+        $('#' + this.id).css('background-color', 'rgb(0, 0, 0)');
       }
       
 			$('#reset_wedges_tags').removeAttr('disabled');
 		})
 		$('#reset_wedges_tags').click(function(){
 			$('#reset_wedges_tags').attr('disabled', true);
-			$('.add_wedge_tag').removeAttr('disabled');
+      $('#' + this.id).css('background-color', 'rgb(0, 0, 0)');
 		})
 		
 		$('#reveal_backdrop').click(function(){
