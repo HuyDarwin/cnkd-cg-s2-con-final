@@ -70,87 +70,43 @@ $(function () {
 				});
 				update(ref(db, 'commands'), { spin : 0 })
 			}
+      /*
 			if(data.awt_1m == 1){
-        if($('#wwt_1m').css('opacity') == 0){
-          $('#wwt_1m').css('opacity', 1);
-        }
-        if($('#wwt_1m').css('opacity') == 1){
-          $('#wwt_1m').css('opacity', 0);
-        }
+				$('#wwt_1m').css('opacity', 1);
 			}
 			if(data.awt_ex == 1){
-        if($('#wwt_ex').css('opacity') == 0){
-          $('#wwt_ex').css('opacity', 1);
-        }
-        if($('#wwt_ex').css('opacity') == 1){
-          $('#wwt_ex').css('opacity', 0);
-        }
+				$('#wwt_ex').css('opacity', 1);
 			}
 			if(data.awt_jack == 1){
-        if($('#wwt_jack').css('opacity') == 0){
-          $('#wwt_jack').css('opacity', 1);
-        }
-        if($('#wwt_jack').css('opacity') == 1){
-          $('#wwt_jack').css('opacity', 0);
-        }
+				$('#wwt_jack').css('opacity', 1);
 			}
 			if(data.awt_may == 1){
-        if($('#wwt_may').css('opacity') == 0){
-          $('#wwt_may').css('opacity', 1);
-        }
-        if($('#wwt_may').css('opacity') == 1){
-          $('#wwt_may').css('opacity', 0);
-        }
+				$('#wwt_may').css('opacity', 1);
 			}
 			if(data.awt_mys == 1){
-        if($('#wwt_mys_1, #wwt_mys_2').css('opacity') == 0){
-          $('#wwt_mys_1, #wwt_mys_2').css('opacity', 1);
-        }
-        if($('#wwt_mys_1, #wwt_mys_2').css('opacity') == 1){
-          $('#wwt_mys_1, #wwt_mys_2').css('opacity', 0);
-        }
+				$('#wwt_mys_1, #wwt_mys_2').css('opacity', 1);
 			}
 			if(data.awt_gift == 1){
-        if($('#wwt_gift').css('opacity') == 0){
-          $('#wwt_gift').css('opacity', 1);
-        }
-        if($('#wwt_gift').css('opacity') == 1){
-          $('#wwt_gift').css('opacity', 0);
-        }
+				$('#wwt_gift').css('opacity', 1);
 			}
 			if(data.awt_rui == 1){
-        if($('#wwt_rui').css('opacity') == 0){
-          $('#wwt_rui').css('opacity', 1);
-        }
-        if($('#wwt_rui').css('opacity') == 1){
-          $('#wwt_rui').css('opacity', 0);
-        }
+				$('#wwt_rui').css('opacity', 1);
 			}
 			if(data.awt_switch == 1){
-        if($('#wwt_switch').css('opacity') == 0){
-          $('#wwt_switch').css('opacity', 1);
-        }
-        if($('#wwt_switch').css('opacity') == 1){
-          $('#wwt_switch').css('opacity', 0);
-        }
+				$('#wwt_switch').css('opacity', 1);
 			}
 			if(data.awt_them == 1){
-        if($('#wwt_them').css('opacity') == 0){
-          $('#wwt_them').css('opacity', 1);
-        }
-        if($('#wwt_them').css('opacity') == 1){
-          $('#wwt_them').css('opacity', 0);
-        }
+				$('#wwt_them').css('opacity', 1);
 			}
 			if(data.awt_wild == 1){
-        if($('#wwt_wild').css('opacity') == 0){
-          $('#wwt_wild').css('opacity', 1);
-        }
-        if($('#wwt_wild').css('opacity') == 1){
-          $('#wwt_wild').css('opacity', 0);
-        }
-        update(ref(db, 'commands'), { awt_wild : 0 })
+				$('#wwt_wild').css('opacity', 1);
 			}
+      */
+      
+      $('#wwt_1m').css('opacity', data.wwt_1m);
+      $('#wwt_ex').css('opacity', data.wwt_ex);
+      $('#wwt_jack').css('opacity', data.wwt_jack);
+      
 			if(data.reset_wedges_tags == 1){
 				$('.wheel_wedges_tags').css('opacity', 0);
 				update(ref(db, 'commands'), {
