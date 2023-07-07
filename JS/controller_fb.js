@@ -548,7 +548,15 @@ $(function () {
 		})
 		
 		$('.add_wedge_tag').click(function(){
-			$('#' + this.id).attr('disabled', true);
+      
+      alert($('#' + this.id).css('background-color'))
+      if($('#' + this.id).css('background-color') == 'black'){
+        $('#' + this.id).css(('background-color', '#23395D'));
+      }
+      else if($('#' + this.id).css('background-color') == '#23395D'){
+        $('#' + this.id).css(('background-color', 'black'));
+      }
+      
 			$('#reset_wedges_tags').removeAttr('disabled');
 		})
 		$('#reset_wedges_tags').click(function(){
