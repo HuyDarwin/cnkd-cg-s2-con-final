@@ -149,6 +149,7 @@ $(function () {
         if($('#wwt_wild').css('opacity') == 1){
           $('#wwt_wild').css('opacity', 0);
         }
+        update(ref(db, 'commands'), { awt_wild : 0 })
 			}
 			if(data.reset_wedges_tags == 1){
 				$('.wheel_wedges_tags').css('opacity', 0);
