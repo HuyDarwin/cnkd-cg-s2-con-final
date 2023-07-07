@@ -27,8 +27,56 @@ $(function () {
 				update(ref(db, 'commands'), { sound_he : 0 });
 			}
 			if (data.sound_bg_1 == 1){
-				con.PlaySound('',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%201.mp3?v=1688727410054',3);
 				update(ref(db, 'commands'), { sound_bg_1 : 0 });
+			}
+			if (data.sound_bg_2 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%202.mp3?v=1688733523889',3);
+				update(ref(db, 'commands'), { sound_bg_2 : 0 });
+			}
+			if (data.sound_bg_3 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%203.mp3?v=1688733606110',3);
+				update(ref(db, 'commands'), { sound_bg_3 : 0 });
+			}
+			if (data.sound_bg_4 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%204.mp3?v=1688733641974',3);
+				update(ref(db, 'commands'), { sound_bg_4 : 0 });
+			}
+			if (data.sound_bg_5 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_5 : 0 });
+			}
+			if (data.sound_bg_6 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_6 : 0 });
+			}
+			if (data.sound_bg_7 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_7 : 0 });
+			}
+			if (data.sound_bg_8 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_8 : 0 });
+			}
+			if (data.sound_bg_9 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_9 : 0 });
+			}
+			if (data.sound_bg_10 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_10 : 0 });
+			}
+			if (data.sound_bg_11 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_11 : 0 });
+			}
+			if (data.sound_bg_12 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_12 : 0 });
+			}
+			if (data.sound_bg_13 == 1){
+				con.PlaySound('',3);
+				update(ref(db, 'commands'), { sound_bg_13 : 0 });
 			}
 			
 			if (data.sound_1m == 1){
@@ -90,6 +138,10 @@ $(function () {
           setTimeout(function(){
             con.StopAllSounds(4);
           }, 250)
+        }
+        else if(h == 'bonus_round'){
+          con.StopAllSounds(4);
+          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Solved.mp3?v=1688733444698',1);
         }
         else{
           con.StopAllSounds(4);
