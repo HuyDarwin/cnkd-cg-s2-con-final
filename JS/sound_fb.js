@@ -78,6 +78,11 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%2013.wav?v=1688734248928',3);
 				update(ref(db, 'commands'), { sound_bg_13 : 0 });
 			}
+      
+			if (data.sound_wrong == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20Buzzer.wav?v=1688742910074',2);
+				update(ref(db, 'commands'), { sound_wrong : 0 });
+			}
 			
 			if (data.sound_1m == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/1%20Tri%E1%BB%87u%20CG.wav?v=1688741945417',2);
@@ -122,6 +127,15 @@ $(function () {
 			if (data.sound_ml == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Lose%20A%20Turn%20(_).wav?v=1688742497171',2);
 				update(ref(db, 'commands'), { sound_ml : 0 });
+			}
+			if (data.sound_pt == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Ph%E1%BA%A7n%20Th%C6%B0%E1%BB%9Fng.wav?v=1688742609453',2);
+				update(ref(db, 'commands'), { sound_pt : 0 });
+			}
+      
+			if (data.sound_br_trans == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Transition.mp3?v=1688743124414',3);
+				update(ref(db, 'commands'), { sound_br_trans : 0 });
 			}
       
 			if (data.sound_letter == 1){
