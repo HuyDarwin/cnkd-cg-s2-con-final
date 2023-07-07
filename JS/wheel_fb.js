@@ -106,6 +106,13 @@ $(function () {
       $('#wwt_1m').css('opacity', data.wwt_1m);
       $('#wwt_ex').css('opacity', data.wwt_ex);
       $('#wwt_jack').css('opacity', data.wwt_jack);
+      $('#wwt_may').css('opacity', data.wwt_may);
+      $('#wwt_mys').css('opacity', data.wwt_mys);
+      $('#wwt_gift').css('opacity', data.wwt_gift);
+      $('#wwt_rui').css('opacity', data.wwt_rui);
+      $('#wwt_switch').css('opacity', data.wwt_switch);
+      $('#wwt_them').css('opacity', data.wwt_them);
+      $('#wwt_wild').css('opacity', data.wwt_wild);
       
 			if(data.reset_wedges_tags == 1){
 				$('.wheel_wedges_tags').css('opacity', 0);
