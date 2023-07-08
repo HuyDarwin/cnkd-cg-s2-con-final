@@ -20,8 +20,16 @@ $(function () {
 		
 		// Get data
 		
+    
+    var a;
+    var b;
+    var c;
+    
 		onValue(ref(db, 'variables'), (snapshot) => {
 			const data = snapshot.val();
+      a = data.spinning_rotating_degree,
+      b =	data.spinning_random_degree,
+      c = data.spinning_miliseconds
 		})
 		
 		onValue(ref(db, 'commands'), (snapshot) => {
@@ -49,22 +57,8 @@ $(function () {
 				update(ref(db, 'commands'), { cw_r4 : 0 })
 			}
 			if(data.spin == 1){
-				get(child(ref(db), 'variables')).then((snapshot) => {
-				  if (snapshot.exists()) {
-					update(ref(db, 'commands'), {
-						a : snapshot.val().spinning_rotating_degree,
-						b :	snapshot.val().spinning_random_degree,
-						c : snapshot.val().spinning_miliseconds
-					})
-				  }
-				  else {
-					console.log("No data available");
-				  }
-				}).catch((error) => {
-				  console.error(error);
-				});
-				var spinning_final_rotating_degree = (data.a + data.b) % 360;
-				$('.wheel').rotate(data.a + data.b, data.c, data.a, function(){
+				var spinning_final_rotating_degree = (a + b) % 360;
+				$('.wheel').rotate(a + b, c, a, function(){
 					$('.wheel').rotate(spinning_final_rotating_degree, 0, spinning_final_rotating_degree);
 					update(ref(db, 'variables'), { spinning_rotating_degree : spinning_final_rotating_degree })
 				});
