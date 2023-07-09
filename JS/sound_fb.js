@@ -25,7 +25,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_intro : 0 });
 			}
 			if (data.sound_he == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Host%20Entrance.mp3?v=1688727171809',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Host%20Entrance.mp3?v=1688889851349',2);
 				update(ref(db, 'commands'), { sound_he : 0 });
 			}
 			if (data.sound_theme == 1){
@@ -88,6 +88,10 @@ $(function () {
 			if (data.sound_wrong == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20Buzzer.wav?v=1688742910074',2);
 				update(ref(db, 'commands'), { sound_wrong : 0 });
+			}
+			if (data.sound_br_double_buzzer == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Double%20Buzzer%20(For%20Bonus%20Round).mp3?v=1688889850747',2);
+				update(ref(db, 'commands'), { sound_br_double_buzzer : 0 });
 			}
 			
 			if (data.sound_1m == 1){
