@@ -32,7 +32,9 @@ $(function () {
 			
 			buzzer_toggle: 0,
 			buzzer_status: 0,
-			buzzer_number: 0
+			buzzer_number: 0,
+      
+      win_or_lose: 0
 		})
 		
 		update(ref(db, 'variables/letters'), {
@@ -469,12 +471,24 @@ $(function () {
 		})
 		$('#puzzle_solve').click(function(){
 			$('.open_letter, #puzzle_solve, #tossup_buzzer, #tossup_continue').attr('disabled', true);
-			for(var i = 1; i <= 64; i++){
-				if(letters[i - 1].letter_existence == true){
-					letters[i - 1].status = 4;
-					update(ref(db, 'variables/letters/status'), { ['letter_' + i] : 4 })
-				}
-			}
+      if(round == 'bonus_round' && win_or_lose == 2){
+        for(var i = 1; i <= 64; i++){
+          setTimeout(function(){
+            if(letters[i - 1].letter_existence == true){
+              letters[i - 1].status = 4;
+              update(ref(db, 'variables/letters/status'), { ['letter_' + i] : 4 })
+            }
+          }, 50 * i)
+        }
+      }
+      else{
+        for(var i = 1; i <= 64; i++){
+          if(letters[i - 1].letter_existence == true){
+            letters[i - 1].status = 4;
+            update(ref(db, 'variables/letters/status'), { ['letter_' + i] : 4 })
+          }
+        }
+      }
 			clearInterval(tossup_int)
 			tossup_boolean = false;
 			update(ref(db, 'variables'), {
@@ -488,7 +502,7 @@ $(function () {
       }
 		})
     
-    $('.sound_br_10s').click(function(){
+    $('#sound_br_10s').click(function(){
       setTimeout(function(){
         if(round == 'bonus_round' && win_or_lose == 0){
           win_or_lose = 2;
