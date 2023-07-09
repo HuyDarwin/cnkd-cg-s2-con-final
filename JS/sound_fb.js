@@ -229,10 +229,12 @@ $(function () {
             con.StopAllSounds(4);
           }, 250)
         }
-        else if(h == 'bonus_round' && i != 2){
-          con.StopAllSounds(1);
-          con.StopAllSounds(4);
-          con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Solved.mp3?v=1688733444698',1);
+        else if(h == 'bonus_round'){
+          if(i != 2){
+            con.StopAllSounds(1);
+            con.StopAllSounds(4);
+            con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Solved.mp3?v=1688733444698',1);
+          }
         }
         else{
           con.StopAllSounds(4);
