@@ -141,17 +141,17 @@ $(function () {
 				update(ref(db, 'commands'), { sound_ex_bg : 0 });
 			}
       
-			if (data.sound_br_trans == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Transition.mp3?v=1688743124414',3);
-				update(ref(db, 'commands'), { sound_br_trans : 0 });
-			}
 			if (data.sound_br_spin == 1){
-        con.StopAllSounds(3)
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Spin.mp3?v=1688743195156',1);
 				update(ref(db, 'commands'), { sound_br_spin : 0 });
 			}
-			if (data.sound_br_rstlne == 1){
+			if (data.sound_br_trans == 1){
         con.StopAllSounds(1)
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Transition.mp3?v=1688743124414',3);
+				update(ref(db, 'commands'), { sound_br_trans : 0 });
+			}
+			if (data.sound_br_rstlne == 1){
+        con.StopAllSounds(3)
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20_R%20S%20T%20L%20N%20E_%20Reveal.mp3?v=1688743528349',3);
 				update(ref(db, 'commands'), { sound_br_rstlne : 0 });
 			}
@@ -224,6 +224,7 @@ $(function () {
           }, 250)
         }
         else if(h == 'bonus_round'){
+          con.StopAllSounds(1);
           con.StopAllSounds(4);
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Solved.mp3?v=1688733444698',1);
         }

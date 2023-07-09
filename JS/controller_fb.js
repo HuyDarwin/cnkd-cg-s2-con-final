@@ -462,6 +462,10 @@ $(function () {
 					$('#ol_' + i).removeAttr('disabled');
 				}
 			}
+      if(round == 'bonus_round'){
+        win_or_lose = 0;
+        update(ref(db, 'variables'), { win_or_lose : win_or_lose })
+      }
 		})
 		$('#puzzle_solve').click(function(){
 			$('.open_letter, #puzzle_solve, #tossup_buzzer, #tossup_continue').attr('disabled', true);
@@ -478,6 +482,10 @@ $(function () {
 				buzzer_status: 0,
 				buzzer_number: 0
 			})
+      if(round == 'bonus_round' && win_or_lose == 0){
+        win_or_lose = 1;
+        update(ref(db, 'variables'), { win_or_lose : win_or_lose })
+      }
 		})
 		
 		$('.open_letter').click(function(){
@@ -640,6 +648,8 @@ $(function () {
 				contestant_3_total_round: $('#cst_3').val()
 			})
 		})
+    
+    $('.update_round_total').click(function(){
 		
 		// Action
 		
