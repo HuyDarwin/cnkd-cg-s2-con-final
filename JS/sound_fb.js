@@ -185,6 +185,10 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20_Ding_.mp3?v=1688522326911',2);
 				update(ref(db, 'commands'), { sound_letter : 0 });
 			}
+			if (data.sound_double_buzzer == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Double%20Buzzer.wav?v=1688874562005',2);
+				update(ref(db, 'commands'), { sound_double_buzzer : 0 });
+			}
       
 			if (data.spin == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
@@ -223,7 +227,7 @@ $(function () {
             con.StopAllSounds(4);
           }, 250)
         }
-        else if(h == 'bonus_round'){
+        else if(h == 'bonus_round' && ){
           con.StopAllSounds(1);
           con.StopAllSounds(4);
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20Solved.mp3?v=1688733444698',1);

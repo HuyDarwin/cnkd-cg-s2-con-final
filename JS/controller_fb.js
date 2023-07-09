@@ -487,6 +487,18 @@ $(function () {
         update(ref(db, 'variables'), { win_or_lose : win_or_lose })
       }
 		})
+    
+    $('.sound_br_10s').click(function(){
+      setTimeout(function(){
+        if(round == 'bonus_round' && win_or_lose == 0){
+          win_or_lose = 2;
+          update(ref(db, 'variables'), { win_or_lose : win_or_lose })
+          setTimeout(function(){
+            update(ref(db, 'commands'), { sound_double_buzzer : 1 })
+          }, 500)
+        }
+      }, 10000)
+    })
 		
 		$('.open_letter').click(function(){
 			if(round == 'tossup_1' || round == 'tossup_2' || round == 'triple_tossup_1' || round == 'triple_tossup_2' || round == 'triple_tossup_3'){
@@ -648,8 +660,6 @@ $(function () {
 				contestant_3_total_round: $('#cst_3').val()
 			})
 		})
-    
-    $('.update_round_total').click(function(){
 		
 		// Action
 		
