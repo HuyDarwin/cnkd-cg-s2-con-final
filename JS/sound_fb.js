@@ -45,7 +45,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_3 : 0 });
 			}
 			if (data.sound_bg_4 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%204.mp3?v=1688733641974',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%204.mp3?v=1688995072654',3);
 				update(ref(db, 'commands'), { sound_bg_4 : 0 });
 			}
 			if (data.sound_bg_5 == 1){
