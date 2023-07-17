@@ -601,19 +601,19 @@ $(function () {
 		$('#add_to_round').click(function(){
 			$('#csr_1').html(Number($('#csr_1').val()) + Number($('#csi_1').val()));
 			$('#csr_2').html(Number($('#csr_2').val()) + Number($('#csi_2').val()));
-			$('#csr_3').html(Number($('#csr_3').val()) + Number($('#csi_2').val()));
+			$('#csr_3').html(Number($('#csr_3').val()) + Number($('#csi_3').val()));
 		})
 		
 		$('#subtract_from_round').click(function(){
 			$('#csr_1').html(Number($('#csr_1').val()) - Number($('#csi_1').val()));
 			$('#csr_2').html(Number($('#csr_2').val()) - Number($('#csi_2').val()));
-			$('#csr_3').html(Number($('#csr_3').val()) - Number($('#csi_2').val()));
+			$('#csr_3').html(Number($('#csr_3').val()) - Number($('#csi_3').val()));
 		})
 		
 		$('#replace_round').click(function(){
 			$('#csr_1').html(Number($('#csi_1').val()));
 			$('#csr_2').html(Number($('#csi_2').val()));
-			$('#csr_3').html(Number($('#csi_2').val()));
+			$('#csr_3').html(Number($('#csi_3').val()));
 		})
 		
 		$('#reset_round').click(function(){
@@ -625,19 +625,19 @@ $(function () {
 		$('#add_to_total').click(function(){
 			$('#cst_1').html(Number($('#cst_1').val()) + Number($('#csr_1').val()));
 			$('#cst_2').html(Number($('#cst_2').val()) + Number($('#csr_2').val()));
-			$('#cst_3').html(Number($('#cst_3').val()) + Number($('#csr_2').val()));
+			$('#cst_3').html(Number($('#cst_3').val()) + Number($('#csr_3').val()));
 		})
 		
 		$('#subtract_from_total').click(function(){
 			$('#cst_1').html(Number($('#cst_1').val()) - Number($('#csr_1').val()));
 			$('#cst_2').html(Number($('#cst_2').val()) - Number($('#csr_2').val()));
-			$('#cst_3').html(Number($('#cst_3').val()) - Number($('#csr_2').val()));
+			$('#cst_3').html(Number($('#cst_3').val()) - Number($('#csr_3').val()));
 		})
 		
 		$('#replace_total').click(function(){
 			$('#cst_1').html(Number($('#csr_1').val()));
 			$('#cst_2').html(Number($('#csr_2').val()));
-			$('#cst_3').html(Number($('#csr_2').val()));
+			$('#cst_3').html(Number($('#csr_3').val()));
 		})
 		
 		$('#reset_total').click(function(){
