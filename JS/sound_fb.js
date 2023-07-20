@@ -143,7 +143,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_pt : 0 });
 			}
 			if (data.sound_ex_bg == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Express%20Music.mp3?v=1688744104634',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Express%20Music.mp3?v=1689866207653',4);
 				update(ref(db, 'commands'), { sound_ex_bg : 0 });
 			}
       
