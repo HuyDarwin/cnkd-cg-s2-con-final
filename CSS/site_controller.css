@@ -290,6 +290,16 @@ textarea {
 	position:static;
 }
 
+.buzzer_player {
+	font-family:'SFU Futura Book';
+	font-size:1.3vw;
+	border:0.1vw solid white;
+	left:0vw;
+	width:32.75vw;
+  top:16.5vw;
+  height:2.5vw;
+}
+
 .contestants_score {
 	width:34vw;
 	height:20vw;

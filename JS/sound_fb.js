@@ -29,7 +29,10 @@ $(function () {
 				update(ref(db, 'commands'), { sound_he : 0 });
 			}
 			if (data.sound_theme == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Theme%201.mp3?v=1688743568648',2);
+        setTimeout(function(){
+          con.StopAllSounds(4);
+        }, 1000)
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Theme%201.mp3?v=1688743568648',5);
 				update(ref(db, 'commands'), { sound_theme : 0 });
 			}
 			if (data.sound_bg_1 == 1){

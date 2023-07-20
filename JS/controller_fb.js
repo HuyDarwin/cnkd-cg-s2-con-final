@@ -62,6 +62,13 @@ $(function () {
 				$('#tossup_buzzer').click();
 				update(ref(db, 'variables'), { buzzer_status: 0 })
 			}
+      
+			if(data.buzzer_number != 0 && data.buzzer_number != undefined){
+				$('.buzzer_player').html(data.buzzer_number + '. ' + eval('data.contestant_' + data.buzzer_number + '_name'));
+			}
+			else{
+				$('.buzzer_player').html('');
+			}
 		})
 		
 		onValue(ref(db, 'variables/letters'), (snapshot) => {
@@ -667,7 +674,7 @@ $(function () {
 		$('#reset_wedges_tags').click();
 		$('#hide_backdrop').click();
 		
-		$('.open_letter, #puzzle_reveal, #puzzle_solve, #tossup_buzzer, #tossup_continue, .contestant_score_round, .contestant_score_total, .question_info').attr('disabled', true);
+		$('.open_letter, #puzzle_reveal, #puzzle_solve, #tossup_buzzer, #tossup_continue, .contestant_score_round, .contestant_score_total, .question_info, .buzzer_player').attr('disabled', true);
 		
 		for(var i = 1; i <= 64; i++){
 			letters.push({
