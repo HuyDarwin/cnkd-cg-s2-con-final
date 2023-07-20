@@ -571,7 +571,11 @@ $(function () {
 			$('#tossup_continue').attr('disabled', true);
 			$('#tossup_buzzer').removeAttr('disabled');
 			tossup_boolean = true;
-			update(ref(db, 'variables'), { buzzer_toggle: 1 })
+			update(ref(db, 'variables'), {
+        buzzer_toggle: 1,
+        buzzer_number: 0
+        
+      })
 		})
 		
 		$('.add_wedge_tag').click(function(){
