@@ -60,7 +60,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_6 : 0 });
 			}
 			if (data.sound_bg_7 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%207.mp3?v=1688733738187',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/S%E1%BA%AFc%20m%C3%A0u.mp3?v=1689937951201',3);
 				update(ref(db, 'commands'), { sound_bg_7 : 0 });
 			}
 			if (data.sound_bg_8 == 1){
