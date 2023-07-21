@@ -68,7 +68,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_8 : 0 });
 			}
 			if (data.sound_bg_9 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%209.mp3?v=1688734198010',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%209.mp3?v=1689900149269',3);
 				update(ref(db, 'commands'), { sound_bg_9 : 0 });
 			}
 			if (data.sound_bg_10 == 1){
@@ -76,11 +76,11 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_10 : 0 });
 			}
 			if (data.sound_bg_11 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%2011.mp3?v=1688734232414',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%2011.mp3?v=1689900150325',3);
 				update(ref(db, 'commands'), { sound_bg_11 : 0 });
 			}
 			if (data.sound_bg_12 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%2012.mp3?v=1688734235968',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%2012.mp3?v=1689900157495',3);
 				update(ref(db, 'commands'), { sound_bg_12 : 0 });
 			}
 			if (data.sound_bg_13 == 1){
