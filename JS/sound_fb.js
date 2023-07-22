@@ -60,7 +60,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_6 : 0 });
 			}
 			if (data.sound_bg_7 == 1){
-				con.PlaySound('https://cdn.glitch.me/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Seng%20Tr%E1%BA%A7n%20l%E1%BA%AFc%20%C4%91%C3%ADt%20%20PHAN%20UNG%20CUA%20TAO%20%20ver%2020%20%201%20HOURS.mp3?v=1689996462951',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Messenger.mp3?v=1690040138069',1);
 				update(ref(db, 'commands'), { sound_bg_7 : 0 });
 			}
 			if (data.sound_bg_8 == 1){
