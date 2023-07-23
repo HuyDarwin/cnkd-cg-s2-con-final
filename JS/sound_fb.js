@@ -60,7 +60,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_6 : 0 });
 			}
 			if (data.sound_bg_7 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Nh%E1%BA%A1c%20hi%E1%BB%87u%20Vua%20Ti%E1%BA%BFng%20Ch%C3%A2u%20feat%20HV%20nh%C6%B0ng%20TMN%20h%C3%A1t.mp3?v=1690118658538',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Messenger.mp3?v=1690040138069',1);
 				update(ref(db, 'commands'), { sound_bg_7 : 0 });
 			}
 			if (data.sound_bg_8 == 1){
