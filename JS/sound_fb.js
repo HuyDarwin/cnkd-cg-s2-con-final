@@ -32,7 +32,7 @@ $(function () {
         setTimeout(function(){
           con.StopAllSounds(4);
         }, 1000)
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Theme%201.mp3?v=1688743568648',5);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Theme%201%20-6%20amplify.mp3?v=1690100609642',5);
 				update(ref(db, 'commands'), { sound_theme : 0 });
 			}
 			if (data.sound_bg_1 == 1){
