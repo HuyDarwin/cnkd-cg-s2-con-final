@@ -664,11 +664,11 @@ $(function () {
 				contestant_3_score_round: $('#csr_3').val()
 			})
 		})
-		$('.update_round_total').click(function(){
+		$('.update_total_score').click(function(){
 			update(ref(db, 'variables'), {
-				contestant_1_total_round: $('#cst_1').val(),
-				contestant_2_total_round: $('#cst_2').val(),
-				contestant_3_total_round: $('#cst_3').val()
+				contestant_1_score_total: $('#cst_1').val(),
+				contestant_2_score_total: $('#cst_2').val(),
+				contestant_3_score_total: $('#cst_3').val()
 			})
 		})
 		

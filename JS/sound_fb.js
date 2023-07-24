@@ -170,6 +170,11 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Bonus%20Round%20_3%20Consonants%20and%201%20Vowel_.mp3?v=1688743531678',3);
 				update(ref(db, 'commands'), { sound_br_3c1v : 0 });
 			}
+			if (data.sound_br_10s_think == 1){
+        con.StopAllSounds(3)
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20WoF%20%202021%20BR%2010%20Second%20Timer%20With%20Buzzer.mp3?v=1690189654343',1);
+				update(ref(db, 'commands'), { sound_br_10s_think : 0 });
+			}
 			if (data.sound_br_10s == 1){
         con.StopAllSounds(3)
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/10%20Seconds.mp3?v=1688743590136',1);
