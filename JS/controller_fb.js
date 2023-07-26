@@ -502,7 +502,6 @@ $(function () {
         if(round == 'bonus_round' && win_or_lose == 0){
           win_or_lose = 2;
           update(ref(db, 'variables'), { win_or_lose : win_or_lose })
-          update(ref(db, 'commands'), { sound_br_double_buzzer : 1 })
         }
       }, 10000)
     })
