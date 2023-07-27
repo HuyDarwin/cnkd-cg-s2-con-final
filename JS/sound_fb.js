@@ -59,10 +59,10 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%206.mp3?v=1688733716798',3);
 				update(ref(db, 'commands'), { sound_bg_6 : 0 });
 			}
-			if (data.sound_bg_7 == 1){
+			/* if (data.sound_bg_7 == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Messenger.mp3?v=1690040138069',1);
 				update(ref(db, 'commands'), { sound_bg_7 : 0 });
-			}
+			} */
 			if (data.sound_bg_8 == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%208.mp3?v=1688734174866',3);
 				update(ref(db, 'commands'), { sound_bg_8 : 0 });
@@ -89,6 +89,7 @@ $(function () {
 			}
       
 			if (data.sound_wrong == 1){
+        con.StopAllSounds(4);
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Letter%20Buzzer.wav?v=1688742910074',2);
 				update(ref(db, 'commands'), { sound_wrong : 0 });
 			}
@@ -254,6 +255,23 @@ $(function () {
           con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Puzzle%20Solve.mp3?v=1688483410468',1);
         }
 				update(ref(db, 'commands'), { puzzle_solve : 0 });
+			}
+      
+			if (data.sound_cus_1 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Gi%E1%BB%9D%20th%E1%BB%A9%209999999%2B%20-%20by%20Hi%E1%BA%BFu.mp3?v=1690467330778',1);
+				update(ref(db, 'commands'), { sound_cus_1 : 0 });
+			}
+			if (data.sound_cus_2 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/H%C3%A0nh%20tr%C3%ACnh%20r%E1%BB%B1c%20r%E1%BB%A1%20-%20Hi%E1%BB%81u%20%C4%90%C3%ACnh%20Ho%C3%A1ng.MP3?v=1690467332112',1);
+				update(ref(db, 'commands'), { sound_cus_2 : 0 });
+			}
+			if (data.sound_cus_3 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Hi%E1%BA%BFu%20h%C3%A1t%20Vua%20ti%E1%BA%BFng%20Vi%E1%BB%87t.mp3?v=1690467332390',1);
+				update(ref(db, 'commands'), { sound_cus_3 : 0 });
+			}
+			if (data.sound_cus_4 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Kh%C3%BAc%20giao%20tranh%20by%20H%C4%90H%2C%20b%C3%A8%20M%E1%BB%B9%20Linh%2C%20Minh%20Qu%C3%A2n.mp3?v=1690467333658',1);
+				update(ref(db, 'commands'), { sound_cus_4 : 0 });
 			}
 
 			if (data.sound_stop == 1){
