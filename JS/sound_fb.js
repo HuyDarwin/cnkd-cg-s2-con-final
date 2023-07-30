@@ -273,6 +273,14 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Kh%C3%BAc%20giao%20tranh%20by%20H%C4%90H%2C%20b%C3%A8%20M%E1%BB%B9%20Linh%2C%20Minh%20Qu%C3%A2n.mp3?v=1690467333658',1);
 				update(ref(db, 'commands'), { sound_cus_4 : 0 });
 			}
+			if (data.sound_cus_5 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Kh%C3%A1t%20khao%20tu%E1%BB%95i%20tr%E1%BA%BB%20(5S%20Online%20S2%20OST)%20-%20%C4%90%C3%ACnh%20Hi%E1%BA%BFu.mp3?v=1690711637652',1);
+				update(ref(db, 'commands'), { sound_cus_5 : 0 });
+			}
+			if (data.sound_cus_6 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/h%C3%A9o%20hpvq.mp3?v=1690711647358',1);
+				update(ref(db, 'commands'), { sound_cus_6 : 0 });
+			}
 
 			if (data.sound_stop == 1){
         con.StopAllSounds();
