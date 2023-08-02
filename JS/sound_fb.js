@@ -281,6 +281,10 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/h%C3%A9o%20hpvq.mp3?v=1690711647358',1);
 				update(ref(db, 'commands'), { sound_cus_6 : 0 });
 			}
+			if (data.sound_cus_7 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Rick%20Astley%20%20Never%20Gonna%20Give%20You%20Up%20Official%20Music%20Video.mp3?v=1690939849518',1);
+				update(ref(db, 'commands'), { sound_cus_7 : 0 });
+			}
 
 			if (data.sound_stop == 1){
         con.StopAllSounds();
