@@ -129,6 +129,11 @@ textarea {
 	top:22vw;
 }
 
+#reload_host {
+	top:22vw;
+  left:6.5vw;
+}
+
 #bh_puzzleboard {
 	width:32.15vw;
 	height:26.5vw;

@@ -43,7 +43,7 @@ $(function () {
 			
 			for(var i = 1; i <= 64; i++){
 				if(eval('snapshot.val().letter_' + i) == '.'){
-					continue;
+					$('#letter_' + i + ' div').html('');
 				}
 				else{
 					$('#letter_' + i + ' div').html(eval('snapshot.val().letter_' + i));
