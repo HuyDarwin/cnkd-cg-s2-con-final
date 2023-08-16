@@ -58,6 +58,10 @@ $(function () {
 				location.reload(true);
 				update(ref(db, 'commands'), { reload : 0 });
 			}
+			if (data.reload_host == 1){
+				location.reload(true);
+				update(ref(db, 'commands'), { reload_host : 0 });
+			}
 			
 		})
 		
