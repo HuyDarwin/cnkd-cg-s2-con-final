@@ -258,32 +258,24 @@ $(function () {
 			}
       
 			if (data.sound_cus_1 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Gi%E1%BB%9D%20th%E1%BB%A9%209999999%2B%20-%20by%20Hi%E1%BA%BFu.mp3?v=1690467330778',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20JISOO%20%20%EA%BD%83FLOWER%20MV.mp3?v=1693532271147',1);
 				update(ref(db, 'commands'), { sound_cus_1 : 0 });
 			}
 			if (data.sound_cus_2 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/H%C3%A0nh%20tr%C3%ACnh%20r%E1%BB%B1c%20r%E1%BB%A1%20-%20Hi%E1%BB%81u%20%C4%90%C3%ACnh%20Ho%C3%A1ng.MP3?v=1690467332112',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20ROS%C3%89%20%20Gone%20MV.mp3?v=1693532272922',1);
 				update(ref(db, 'commands'), { sound_cus_2 : 0 });
 			}
 			if (data.sound_cus_3 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Hi%E1%BA%BFu%20h%C3%A1t%20Vua%20ti%E1%BA%BFng%20Vi%E1%BB%87t.mp3?v=1690467332390',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20JENNIE%20%20SOLO%20MV.mp3?v=1693532274655',1);
 				update(ref(db, 'commands'), { sound_cus_3 : 0 });
 			}
 			if (data.sound_cus_4 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Kh%C3%BAc%20giao%20tranh%20by%20H%C4%90H%2C%20b%C3%A8%20M%E1%BB%B9%20Linh%2C%20Minh%20Qu%C3%A2n.mp3?v=1690467333658',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20LISA%20%20LALISA%20MV.mp3?v=1693532275998',1);
 				update(ref(db, 'commands'), { sound_cus_4 : 0 });
 			}
 			if (data.sound_cus_5 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Kh%C3%A1t%20khao%20tu%E1%BB%95i%20tr%E1%BA%BB%20(5S%20Online%20S2%20OST)%20-%20%C4%90%C3%ACnh%20Hi%E1%BA%BFu.mp3?v=1690711637652',1);
-				update(ref(db, 'commands'), { sound_cus_5 : 0 });
-			}
-			if (data.sound_cus_6 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/h%C3%A9o%20hpvq.mp3?v=1690711647358',1);
-				update(ref(db, 'commands'), { sound_cus_6 : 0 });
-			}
-			if (data.sound_cus_7 == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Rick%20Astley%20%20Never%20Gonna%20Give%20You%20Up%20Official%20Music%20Video.mp3?v=1690939849518',1);
-				update(ref(db, 'commands'), { sound_cus_7 : 0 });
+				update(ref(db, 'commands'), { sound_cus_5 : 0 });
 			}
 
 			if (data.sound_stop == 1){
