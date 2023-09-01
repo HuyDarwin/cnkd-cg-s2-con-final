@@ -302,7 +302,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_cus_11 : 0 });
 			}
 			if (data.sound_cus_12 == 1){
-				con.PlaySound('',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20FIFTY%20FIFTY%20%ED%94%BC%ED%94%84%ED%8B%B0%ED%94%BC%ED%94%84%ED%8B%B0%20%20Cupid%20%20Official%20MV.mp3?v=1693555493682',1);
 				update(ref(db, 'commands'), { sound_cus_12 : 0 });
 			}
 			if (data.sound_cus_13 == 1){
