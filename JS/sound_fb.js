@@ -293,6 +293,18 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20NewJeans%20%EB%89%B4%EC%A7%84%EC%8A%A4%20Super%20Shy%20Official%20MV.mp3?v=1693533554179',1);
 				update(ref(db, 'commands'), { sound_cus_9 : 0 });
 			}
+			if (data.sound_cus_10 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20LE%20SSERAFIM%20%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C%20ANTIFRAGILE%20OFFICIAL%20MV.mp3?v=1693533720145',1);
+				update(ref(db, 'commands'), { sound_cus_10 : 0 });
+			}
+			if (data.sound_cus_11 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20%EC%97%AC%EC%9E%90%EC%95%84%EC%9D%B4%EB%93%A4GIDLE%20%20Nxde%20Official%20Music%20Video.mp3?v=1693533720928',1);
+				update(ref(db, 'commands'), { sound_cus_11 : 0 });
+			}
+			if (data.sound_cus_12 == 1){
+				con.PlaySound('',1);
+				update(ref(db, 'commands'), { sound_cus_12 : 0 });
+			}
 			if (data.sound_cus_13 == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Rick%20Astley%20%20Never%20Gonna%20Give%20You%20Up%20Official%20Music%20Video.mp3?v=1690939849518',1);
 				update(ref(db, 'commands'), { sound_cus_13 : 0 });
