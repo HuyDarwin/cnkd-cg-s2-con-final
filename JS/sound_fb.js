@@ -139,7 +139,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_tl : 0 });
 			}
 			if (data.sound_ml == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Lose%20A%20Turn%20(_).wav?v=1688742497171',2);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Double%20Buzzer.wav?v=1688874562005',2);
 				update(ref(db, 'commands'), { sound_ml : 0 });
 			}
 			if (data.sound_pt == 1){
@@ -274,8 +274,28 @@ $(function () {
 				update(ref(db, 'commands'), { sound_cus_4 : 0 });
 			}
 			if (data.sound_cus_5 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Rick%20Astley%20%20Never%20Gonna%20Give%20You%20Up%20Official%20Music%20Video.mp3?v=1690939849518',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20IVE%20%EC%95%84%EC%9D%B4%EB%B8%8C%20I%20AM%20MV.mp3?v=1693533008825',1);
 				update(ref(db, 'commands'), { sound_cus_5 : 0 });
+			}
+			if (data.sound_cus_6 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20IVE%20%EC%95%84%EC%9D%B4%EB%B8%8C%20Kitsch%20MV.mp3?v=1693533551628',1);
+				update(ref(db, 'commands'), { sound_cus_6 : 0 });
+			}
+			if (data.sound_cus_7 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20LE%20SSERAFIM%20%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C%20UNFORGIVEN%20feat%20Nile%20Rodgers%20OFFICIAL%20MV.mp3?v=1693533552451',1);
+				update(ref(db, 'commands'), { sound_cus_7 : 0 });
+			}
+			if (data.sound_cus_8 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20%EC%97%AC%EC%9E%90%EC%95%84%EC%9D%B4%EB%93%A4GIDLE%20%20%ED%80%B8%EC%B9%B4%20Queencard%20Official%20Music%20Video.mp3?v=1693533552706',1);
+				update(ref(db, 'commands'), { sound_cus_8 : 0 });
+			}
+			if (data.sound_cus_9 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20NewJeans%20%EB%89%B4%EC%A7%84%EC%8A%A4%20Super%20Shy%20Official%20MV.mp3?v=1693533554179',1);
+				update(ref(db, 'commands'), { sound_cus_9 : 0 });
+			}
+			if (data.sound_cus_13 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Rick%20Astley%20%20Never%20Gonna%20Give%20You%20Up%20Official%20Music%20Video.mp3?v=1690939849518',1);
+				update(ref(db, 'commands'), { sound_cus_13 : 0 });
 			}
 
 			if (data.sound_stop == 1){
