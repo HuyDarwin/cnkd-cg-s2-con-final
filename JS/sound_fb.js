@@ -309,6 +309,22 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Rick%20Astley%20%20Never%20Gonna%20Give%20You%20Up%20Official%20Music%20Video.mp3?v=1690939849518',1);
 				update(ref(db, 'commands'), { sound_cus_13 : 0 });
 			}
+			if (data.sound_cus_14 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20N%C6%A1i%20h%E1%BA%A1nh%20ph%C3%BAc%20m%E1%BB%89m%20c%C6%B0%E1%BB%9DiTh%C3%B9y%20Chi%20LyricsVideo%20Dung%20l%C3%A0m%20hihi_2.mp3?v=1693641137636',1);
+				update(ref(db, 'commands'), { sound_cus_14 : 0 });
+			}
+			if (data.sound_cus_15 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20tr%E1%BB%9F%20l%E1%BA%A1i%20b%C3%AAn%20nhau%20D%C6%B0%C6%A1ng%20Ho%C3%A0ng%20Y%E1%BA%BFn.mp3?v=1693641200261',1);
+				update(ref(db, 'commands'), { sound_cus_15 : 0 });
+			}
+			if (data.sound_cus_16 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/H%E1%BA%A1nh%20ph%C3%BAc%20v%E1%BB%A5t%20qua.mp3?v=1693641222515',1);
+				update(ref(db, 'commands'), { sound_cus_16 : 0 });
+			}
+			if (data.sound_cus_17 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20%20L%E1%BB%9Di%20B%C3%A0i%20H%C3%A1t%20Lyrics%20%20%20%20L%C3%A2m%20B%E1%BA%A3o%20Ng%E1%BB%8Dc%20%20H%C6%B0%C6%A1ng%20T%C3%ACnh%20Th%C3%A2n%20%20%20Ost%20H%C6%B0%C6%A1ng%20V%E1%BB%8B%20T%C3%ACnh%20Th%C3%A2n%20.mp3?v=1693641338735',1);
+				update(ref(db, 'commands'), { sound_cus_17 : 0 });
+			}
 
 			if (data.sound_stop == 1){
         con.StopAllSounds();
