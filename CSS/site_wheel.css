@@ -1,5 +1,6 @@
 .wheel_holder {
-	background: url('../Images/wheel_bg.png') no-repeat;
+	/*background: url('../Images/wheel_bg.png') no-repeat;*/
+	background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/background%20n%C3%B3n%20m%E1%BB%9Bi.png?v=1693730874540') no-repeat;
 	background-position: center;
 	background-size: cover;
 	width:100vw;

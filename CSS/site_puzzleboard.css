@@ -1,5 +1,6 @@
 .puzzleboard_holder {
-	background: url('../Images/puzzleboard_bg.png') no-repeat;
+	/*ackground: url('../Images/puzzleboard_bg.png') no-repeat;*/
+	background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/LATEST.jpg?v=1693731281544') no-repeat;
 	background-position: center;
 	background-size: cover;
 	width:100vw;
