@@ -40,7 +40,7 @@ $(function () {
 				update(ref(db, 'commands'), { reload : 0 });
 			}
 			
-			/*if(data.cw_r1 == 1){
+			if(data.cw_r1 == 1){
 				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%201.png?v=1688611206409")');
 				update(ref(db, 'commands'), { cw_r1 : 0 })
 			}
@@ -55,8 +55,8 @@ $(function () {
 			if(data.cw_r4 == 1){
 				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%204.png?v=1688611241089")');
 				update(ref(db, 'commands'), { cw_r4 : 0 })
-			}*/
-			if(data.cw_r1 == 1){
+			}
+			/*if(data.cw_r1 == 1){
 				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v1.png?v=1693744967229")');
 				update(ref(db, 'commands'), { cw_r1 : 0 })
 			}
@@ -71,7 +71,7 @@ $(function () {
 			if(data.cw_r4 == 1){
 				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v4.png?v=1693744971269")');
 				update(ref(db, 'commands'), { cw_r4 : 0 })
-			}
+			}*/
 			if(data.spin == 1){
 				var spinning_final_rotating_degree = (a + b) % 360;
 				$('.wheel').rotate(a + b, c, a, function(){
