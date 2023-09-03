@@ -1,6 +1,6 @@
 .wheel_holder {
 	background: url('../Images/wheel_bg.png') no-repeat;
-	/*background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/background%20n%C3%B3n%20m%E1%BB%9Bi.png?v=1693730874540') no-repeat;*/
+	/*background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/background%20n%C3%B3n%20h%E1%BA%A1i%20%C4%91i%E1%BB%87n.png?v=1693743879654') no-repeat;*/
 	background-position: center;
 	background-size: cover;
 	width:100vw;
@@ -94,6 +94,16 @@
 	background-position: center;
 	background-size: cover;
 	width:3.65vw;
+	height:3.9vw;
+	left:60.7vw;
+	top:13.5vw;
+}
+
+#kim_3 {
+	background: url('../Images/kim_3.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100vw;
 	height:3.9vw;
 	left:60.7vw;
 	top:13.5vw;
