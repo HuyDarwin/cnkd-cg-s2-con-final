@@ -1,6 +1,6 @@
 .wheel_holder {
-	background: url('../Images/wheel_bg.png') no-repeat;
-	/*background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/background%20n%C3%B3n%20h%E1%BA%A1i%20%C4%91i%E1%BB%87n.png?v=1693743879654') no-repeat;*/
+	/*background: url('../Images/wheel_bg.png') no-repeat;*/
+	background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/background%20n%C3%B3n%20h%E1%BA%A1i%20%C4%91i%E1%BB%87n.png?v=1693743879654') no-repeat;
 	background-position: center;
 	background-size: cover;
 	width:100vw;
@@ -10,7 +10,8 @@
 }
 
 .wheel {
-	background-image: url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%201.png?v=1688611206409");
+	/*background-image: url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%201.png?v=1688611206409");*/
+	background-image: url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v1.png?v=1693744967229");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -69,6 +70,10 @@
 	background-image: url("../Images/thẻ cơ hội.png");
 }
 
+.kim {
+  opacity:0;
+}
+
 #kim_1 {
 	background: url('../Images/kim_1.png') no-repeat;
 	background-position: center;
@@ -99,12 +104,12 @@
 	top:13.5vw;
 }
 
-#kim_3 {
-	background: url('../Images/kim_3.png') no-repeat;
+.kim_hv {
+	background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/kim%20c%E1%BB%A7a%20n%C3%B3n%20h%E1%BA%A1i%20%C4%91i%E1%BB%87n.png?v=1693744586808') no-repeat;
 	background-position: center;
 	background-size: cover;
 	width:100vw;
-	height:3.9vw;
-	left:60.7vw;
-	top:13.5vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
 }
