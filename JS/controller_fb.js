@@ -428,8 +428,9 @@ $(function () {
 			};
 			reader.readAsArrayBuffer(file);
 			setTimeout(function(){
+        $('.open_letter').css({'background-color':'black'});
 				$('.open_letter').attr('disabled', true);
-				$('#puzzle_reveal').removeAttr('disabled');
+				$('#puzzle_reveal, #puzzle_solve').removeAttr('disabled');
 				$('.open_letter').html('');
 				for(var i = 1; i <= 64; i++){
 					if(letters[i - 1].letter_existence == true){
@@ -459,6 +460,7 @@ $(function () {
 			$('.open_letter').html('');
 			$('.select_round').removeAttr('disabled');
 			$('.open_letter, #puzzle_reveal, #puzzle_solve').attr('disabled', true);
+      $('.open_letter').css({'background-color':'black'});
 		})
 		
 		$('#puzzle_reveal').click(function(){
