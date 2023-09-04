@@ -70,6 +70,10 @@
 	background-image: url("../Images/thẻ cơ hội.png");
 }
 
+#wwt_half_1, #wwt_half_2 {
+	background-image: url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/1-2_cg.png?v=1693803019470");
+}
+
 .kim {
   opacity:1;
 }
