@@ -429,8 +429,8 @@ $(function () {
 			reader.readAsArrayBuffer(file);
 			setTimeout(function(){
         $('.open_letter').css({'background-color':'black'});
-				$('.open_letter').attr('disabled', true);
-				$('#puzzle_reveal, #puzzle_solve').removeAttr('disabled');
+				$('.open_letter, #puzzle_solve').attr('disabled', true);
+				$('#puzzle_reveal').removeAttr('disabled');
 				$('.open_letter').html('');
 				for(var i = 1; i <= 64; i++){
 					if(letters[i - 1].letter_existence == true){
