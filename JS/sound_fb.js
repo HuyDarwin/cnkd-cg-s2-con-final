@@ -59,10 +59,10 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%206.mp3?v=1688733716798',3);
 				update(ref(db, 'commands'), { sound_bg_6 : 0 });
 			}
-			/* if (data.sound_bg_7 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Messenger.mp3?v=1690040138069',1);
+			if (data.sound_bg_7 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20of%20Fortune%201983-1989%20Changing%20Keys%20Theme.mp3?v=1694320442024',1);
 				update(ref(db, 'commands'), { sound_bg_7 : 0 });
-			} */
+			}
 			if (data.sound_bg_8 == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Background%208.mp3?v=1688734174866',3);
 				update(ref(db, 'commands'), { sound_bg_8 : 0 });
@@ -137,6 +137,10 @@ $(function () {
 			if (data.sound_tl == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Th%C3%AAm%20L%C6%B0%E1%BB%A3t.wav?v=1688742259238',2);
 				update(ref(db, 'commands'), { sound_tl : 0 });
+			}
+			if (data.sound_half == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/1_2%20CG.mp3?v=1694320485522',2);
+				update(ref(db, 'commands'), { sound_half : 0 });
 			}
 			if (data.sound_ml == 1){
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Double%20Buzzer.wav?v=1688874562005',2);
