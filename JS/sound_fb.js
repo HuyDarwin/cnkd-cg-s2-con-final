@@ -314,7 +314,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_cus_13 : 0 });
 			}
 			if (data.sound_cus_14 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Goodbye.mp3?v=1694269142880',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20PSY%20%20GANGNAM%20STYLE%EA%B0%95%EB%82%A8%EC%8A%A4%ED%83%80%EC%9D%BC%20MV.mp3?v=1695466628055',1);
 				update(ref(db, 'commands'), { sound_cus_14 : 0 });
 			}
 
