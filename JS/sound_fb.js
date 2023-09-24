@@ -177,7 +177,8 @@ $(function () {
 			}
 			if (data.sound_br_10s_think == 1){
         con.StopAllSounds(3)
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/10%20Seconds%202%20(with%20Double%20Buzzer).mp3?v=1690380851661',1);
+				
+        con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/10%20Seconds%202%20(with%20Double%20Buzzer).mp3?v=1690380851661',1);
 				update(ref(db, 'commands'), { sound_br_10s_think : 0 });
 			}
 			if (data.sound_br_10s == 1){
