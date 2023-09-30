@@ -40,7 +40,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_bg_1 : 0 });
 			}
 			if (data.sound_bg_2 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Background%20Suspense%20Music%20%20Suspenseful%20%20Dramatic%20Film%20Soundtracks%20ANTICIPATION.mp3?v=1696085584382',3);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20Background%20Suspense%20Music%20%20Suspenseful%20%20Dramatic%20Film%20Soundtracks%20ANTICIPATION.mp3?v=1696086684251',3);
 				update(ref(db, 'commands'), { sound_bg_2 : 0 });
 			}
 			if (data.sound_bg_3 == 1){
