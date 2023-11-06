@@ -334,6 +334,10 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/30s%20Countdown.mp3?v=1699258660660',1);
 				update(ref(db, 'commands'), { sound_cus_18 : 0 });
 			}
+			if (data.sound_cus_19 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Start.mp3?v=1699284623172',1);
+				update(ref(db, 'commands'), { sound_cus_19 : 0 });
+			}
 
 			if (data.sound_stop == 1){
         con.StopAllSounds();
