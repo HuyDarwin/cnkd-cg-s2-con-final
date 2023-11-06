@@ -318,6 +318,22 @@ $(function () {
 				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20PSY%20%20GANGNAM%20STYLE%EA%B0%95%EB%82%A8%EC%8A%A4%ED%83%80%EC%9D%BC%20MV.mp3?v=1695466628055',1);
 				update(ref(db, 'commands'), { sound_cus_14 : 0 });
 			}
+			if (data.sound_cus_15 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/10s%20Countdown.mp3?v=1699258643521',1);
+				update(ref(db, 'commands'), { sound_cus_15 : 0 });
+			}
+			if (data.sound_cus_16 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/60s.mp3?v=1699258647337',1);
+				update(ref(db, 'commands'), { sound_cus_16 : 0 });
+			}
+			if (data.sound_cus_17 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/RightObstacle.mp3?v=1699258655459',1);
+				update(ref(db, 'commands'), { sound_cus_17 : 0 });
+			}
+			if (data.sound_cus_18 == 1){
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/30s%20Countdown.mp3?v=1699258660660',1);
+				update(ref(db, 'commands'), { sound_cus_18 : 0 });
+			}
 
 			if (data.sound_stop == 1){
         con.StopAllSounds();
