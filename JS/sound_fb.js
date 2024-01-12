@@ -212,8 +212,9 @@ $(function () {
 			}
       
 			if (data.spin == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
-				update(ref(db, 'commands'), { spin : 0 });
+				//con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate%20(mp3cut.net)%20(5).mp3?v=1705075661805',1);
+        update(ref(db, 'commands'), { spin : 0 });
 			}
 			if (data.puzzle_reveal == 1){
         if(h != 'bonus_round'){

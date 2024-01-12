@@ -13,7 +13,8 @@ $(function () {
 		remove(ref(db));
 		
 		update(ref(db, 'variables'), {
-			spinning_miliseconds: 7500,
+			//spinning_miliseconds: 7500,
+      spinning_miliseconds: 10000,
 			spinning_rotating_degree: 0,
 			spinning_random_degree: 0,
 			round: '',
