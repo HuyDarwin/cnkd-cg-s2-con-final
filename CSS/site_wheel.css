@@ -75,7 +75,7 @@
 }
 
 .kim {
-  opacity:0;
+  opacity:1;
 }
 
 #kim_1 {
@@ -109,7 +109,7 @@
 }
 
 .kim_hv {
-  opacity:1;
+  opacity:0;
 	background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/(m%E1%BB%9Bi)%20kim%20c%E1%BB%A7a%20n%C3%B3n%20h%E1%BA%A1i%20%C4%91i%E1%BB%87n%202..png?v=1693749153186') no-repeat;
 	background-position: center;
 	background-size: cover;
