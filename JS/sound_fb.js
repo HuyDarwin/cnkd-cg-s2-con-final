@@ -264,7 +264,7 @@ $(function () {
 			}
       
 			if (data.sound_cus_1 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20JISOO%20%20%EA%BD%83FLOWER%20MV.mp3?v=1693532271147',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Ti%E1%BA%BFng%20c%C6%B0%E1%BB%9Di%20VTV%20ver%202.mp3?v=1705591783243',1);
 				update(ref(db, 'commands'), { sound_cus_1 : 0 });
 			}
 			if (data.sound_cus_2 == 1){
