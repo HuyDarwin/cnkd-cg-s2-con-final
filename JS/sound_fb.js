@@ -272,7 +272,7 @@ $(function () {
 				update(ref(db, 'commands'), { sound_cus_2 : 0 });
 			}
 			if (data.sound_cus_3 == 1){
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/y2mate.com%20-%20JENNIE%20%20SOLO%20MV.mp3?v=1693532274655',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Gi%E1%BB%9D%20th%E1%BB%A9%209999999%2B%20-%20by%20Hi%E1%BA%BFu.mp3?v=1690467330778',1);
 				update(ref(db, 'commands'), { sound_cus_3 : 0 });
 			}
 			if (data.sound_cus_4 == 1){
