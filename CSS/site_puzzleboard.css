@@ -51,6 +51,20 @@
   opacity:0;
 }
 
+.camera_source:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+
+.camera_source:-webkit-full-screen {
+  max-width: none;
+  width: 100%;
+}
+
+.camera_source video {
+  width:100%;
+}
+
 .backdrop {
 	background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/447843344_851099847035300_6053132700727479077_n.jpg?v=1718195100962') no-repeat;
 	background-position: center;
