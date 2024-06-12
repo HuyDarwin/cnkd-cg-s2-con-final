@@ -243,6 +243,15 @@ textarea {
 	left:14vw;
 }
 
+#reveal_camera {
+	top:25.5vw;
+}
+
+#hide_camera {
+	top:25.5vw;
+	left:14vw;
+}
+
 #bh_sounds {
 	width:33.6vw;
 	height:23.5vw;

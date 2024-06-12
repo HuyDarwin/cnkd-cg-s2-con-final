@@ -86,6 +86,14 @@ $(function () {
 				$('.backdrop').css('opacity', 0);
 				update(ref(db, 'commands'), { hide_backdrop : 0 })
 			}
+			if(data.reveal_camera == 1){
+				$('.camera_source').css('opacity', 1);
+				update(ref(db, 'commands'), { reveal_camera : 0 })
+			}
+			if(data.hide_camera == 1){
+				$('.camera_source').css('opacity', 0);
+				update(ref(db, 'commands'), { hide_camera : 0 })
+			}
 		})
 		
 		// Action
