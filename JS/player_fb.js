@@ -41,6 +41,7 @@ $(function () {
 		// Button Function
 		
 		$('.buzzer').click(function(){
+			$('.buzzer').attr('disabled', true);
 			update(ref(db, 'variables'), {
 				buzzer_status: 1,
 				buzzer_number: number_of_player
