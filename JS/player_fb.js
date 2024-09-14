@@ -51,6 +51,22 @@ $(function () {
 		// Action
 		
 		$('.who_buzzers').attr('disabled', true);
+    
+    $('.prev_wheel').click(function(){
+      $('.prev_wheel, .prev_puzzle').attr('disabled', true);
+      $('.prev_puzzle').removeAttr('disabled');
+      $('.preview').css('opacity',0);
+      $('#preview_1').css('opacity',1);
+    });
+    
+    $('.prev_puzzle').click(function(){
+      $('.prev_wheel, .prev_puzzle').attr('disabled', true);
+      $('.prev_wheel').removeAttr('disabled');
+      $('.preview').css('opacity',0);
+      $('#preview_2').css('opacity',1);
+    });
+    
+    $('.prev_wheel').click();
 		
 	}(window.CNKDCGV = window.CNKDCGV || {}));
 });

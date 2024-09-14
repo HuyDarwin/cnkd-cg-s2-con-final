@@ -20,6 +20,25 @@
       
 		</table>
 	</div>
-	
+  <!--
+  <div class='camera_source'>
+			<video id="videoElement" style="position: fixed;" autoplay muted />
+  </div>
+	!-->
 	<div class='backdrop'></div>
+  <!--
+  <script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+          console.log("Something went wrong!");
+        });
+    }
+  </script>
+  !-->
 </body>
