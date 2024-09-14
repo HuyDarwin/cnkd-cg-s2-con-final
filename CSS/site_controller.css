@@ -245,11 +245,13 @@ textarea {
 
 #reveal_camera {
 	top:25.5vw;
+  opacity:0;
 }
 
 #hide_camera {
 	top:25.5vw;
 	left:14vw;
+  opacity:0;
 }
 
 #bh_sounds {
