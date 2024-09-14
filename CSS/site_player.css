@@ -38,10 +38,22 @@ textarea {
 	filter: brightness(0.1);
 }
 
-.who_buzzers {
-	width:72vw;
-	height:3.75vw;
+.order {
+	width:3.5vw;
+	height:4vw;
 	left:0.5vw;
+	top:0.5vw;
+	border:0.1vw solid white;
+  text-align:center;
+  font-weight:bold;
+  font-family:'FZ Lufga';
+  font-size:2.5vw;
+}
+
+.who_buzzers {
+	width:68vw;
+	height:4vw;
+	left:4.5vw;
 	top:0.5vw;
 	border:0.1vw solid white;
 }
@@ -53,9 +65,25 @@ textarea {
 	left:0.5vw;
 }
 
-.buzzer {
+.prev_wheel {
 	left:73vw;
 	top:0.5vw;
+	width:13vw;
+	height:4vw;
+  font-size:3vw;
+}
+
+.prev_puzzle {
+	left:86.5vw;
+	top:0.5vw;
+	width:13vw;
+	height:4vw;
+  font-size:3vw;
+}
+
+.buzzer {
+	left:73vw;
+	top:4.75vw;
 	width:26.5vw;
-	height:44.9vw;
+	height:40.5vw;
 }
