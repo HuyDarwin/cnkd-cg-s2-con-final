@@ -212,8 +212,8 @@ $(function () {
 			}
       
 			if (data.spin == 1){
-				//con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
-				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/CNKD%20-%20Nh%E1%BA%A1c%20quay%202010%20(Clean).mp3.mp3?v=1718198152200',1);
+				con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3?v=1688483399926',1);
+				//con.PlaySound('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/CNKD%20-%20Nh%E1%BA%A1c%20quay%202010%20(Clean).mp3.mp3?v=1718198152200',1);
         update(ref(db, 'commands'), { spin : 0 });
 			}
 			if (data.puzzle_reveal == 1){
