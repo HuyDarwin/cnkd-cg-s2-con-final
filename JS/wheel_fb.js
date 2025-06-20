@@ -41,35 +41,35 @@ $(function () {
 			}
 			
 			/*if(data.cw_r1 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%201.png?v=1688611206409")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20mới%20cg%201.png")');
 				update(ref(db, 'commands'), { cw_r1 : 0 })
 			}
 			if(data.cw_r2 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%202.png?v=1688611230794")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20mới%20cg%202.png")');
 				update(ref(db, 'commands'), { cw_r2 : 0 })
 			}
 			if(data.cw_r3 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%203.png?v=1688611237704")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20mới%20cg%203.png")');
 				update(ref(db, 'commands'), { cw_r3 : 0 })
 			}
 			if(data.cw_r4 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%204.png?v=1688611241089")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20mới%20cg%204.png")');
 				update(ref(db, 'commands'), { cw_r4 : 0 })
 			}*/
 			if(data.cw_r1 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v1.png?v=1693744967229")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20tứ%20kết%20v1.png")');
 				update(ref(db, 'commands'), { cw_r1 : 0 })
 			}
 			if(data.cw_r2 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v12.png?v=1693744967866")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20tứ%20kết%20v12.png")');
 				update(ref(db, 'commands'), { cw_r2 : 0 })
 			}
 			if(data.cw_r3 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v3.png?v=1693744969458")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20tứ%20kết%20v3.png")');
 				update(ref(db, 'commands'), { cw_r3 : 0 })
 			}
 			if(data.cw_r4 == 1){
-				$('.wheel').css('background-image', 'url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20t%E1%BB%A9%20k%E1%BA%BFt%20v4.png?v=1693744971269")');
+				$('.wheel').css('background-image', 'url("Assets/nón%20tứ%20kết%20v4.png")');
 				update(ref(db, 'commands'), { cw_r4 : 0 })
 			}
 			if(data.spin == 1){
